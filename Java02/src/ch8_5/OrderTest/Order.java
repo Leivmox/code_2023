@@ -1,6 +1,6 @@
 package ch8_5.OrderTest;
 
-import java.util.Objects;
+
 
 public class Order {
     int orderId;
@@ -38,7 +38,17 @@ public class Order {
 
     @Override
     public boolean equals(Object obj) {
-
-
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof Order) {
+            Order ord = (Order) obj;
+            if (this.orderId == ord.orderId && this.orderName.equals(ord.orderName)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
     }
 }

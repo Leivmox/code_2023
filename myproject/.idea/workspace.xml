@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8dfd14ad-0468-4940-b675-698c0d1cc122" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/Demo01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/Demo02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_17_1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_17_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_17_1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_17_1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_17_1/ch6_17.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_18/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_18/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_18/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_18/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_18/ch6_18.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/Demo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/DemoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch6_20/ch6_20.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_5/OrderTest/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_5/OrderTest/OrderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_7/MyDate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_7/MyDateTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_7/Test9/Circle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_7/Test9/CircleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_7/Test9/GeometricObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/constructor_test/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/constructor_test/PersonTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/constructor_test2/TriAngle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/constructor_test2/TriAngleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/extends_test/Kids.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/extends_test/KidsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/extends_test/ManKind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/jiekou/Demo03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_5/OrderTest/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_7/OverrideTest/MyDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_7/OverrideTest/MyDateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_7/Test9/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_7/Test9/CircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java02/src/ch8_7/Test9/GeometricObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project02/maven-project02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project02/src/main/java/com/itheima/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project02/src/test/java/com/itheima/test/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project02/target/classes/com/itheima/HelloWorld.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/src/main/java/ch8_7/HelloMaven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/target/classes/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/target/classes/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/target/classes/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/target/classes/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven01/target/classes/ch8_7/HelloMaven.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch03/DemoEquals.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch03/DemoEquals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch03/Stu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch03/Stu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_15/AverageScore/AverageScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_15/AverageScore/AverageScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_15/IsoscelesTriangle/IsoscelesTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_15/IsoscelesTriangle/IsoscelesTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_6_2/IfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_6_2/IfTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_7/GuessNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_7/GuessNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_7/GuessNumberGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch3_7/GuessNumberGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_4/Test2/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_4/Test2/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_4/Tquals/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/out/production/Java02/ch8_4/Tquals/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/src/ch6_20/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/src/ch6_20/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/src/ch6_20/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/src/ch6_20/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java02/src/ch8_5/OrderTest/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java02/src/ch8_5/OrderTest/Order.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Windows\maven\apache-maven-3.6.1\mvn_repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Windows/maven/apache-maven-3.6.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Windows\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TeQHDIHHXb3uple75eXGVvkLUf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Lambda/code2023/myproject/maven-project02/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="应用程序.HelloWorld">
+    <configuration name="HelloMaven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch8_7.HelloMaven" />
+      <module name="maven01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch8_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.HelloWorld" />
+      <module name="maven-project02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.HelloWorld" />
+        <item itemvalue="应用程序.HelloMaven" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8dfd14ad-0468-4940-b675-698c0d1cc122" name="更改" comment="" />
+      <created>1691400976781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691400976781</updated>
+      <workItem from="1691400977845" duration="168000" />
+      <workItem from="1691401166619" duration="1413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
