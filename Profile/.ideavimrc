@@ -2,10 +2,14 @@
 " 🍰🍰🍰 Extensions 🍰🍰🍰
 " ================================================================================================
 Plug 'preservim/nerdtree'
+
+"下列插件需要在IDEA中下载
 "ideaVim
 "IdeaVim-EasyMotion
 "IdeaVimExtension
 "which-key
+"CodeGlance Pro
+"TranslateAction
 
 
 
@@ -46,11 +50,13 @@ nnoremap <C-k> :m -2<CR>
 inoremap <C-j> <Esc> :m +1<CR>gi
 inoremap <C-k> <Esc> :m -2<CR>gi
 
-"--将 jj 映射为 <Esc>
+"--将 jj 和 jk 映射为 <Esc>
+"jj和jk为主流配置，可按喜好自行调整
 imap jj <Esc>
+imap jk <Esc>
 
-" --Don't use Ex mode, use Q for formatting.
-"--格式化文本，即对选定的文本进行换行或重排，适应指定的文本宽度。
+"--格式化（规范化）文本，即对选定的文本进行换行或重排，适应指定的文本宽度。
+"全文规范化：Ctrl+Alt+l
 map Q gq
 "跳转到下一个错误或警告
 nmap ge <action>(GotoNextError)
@@ -69,6 +75,10 @@ nmap ma <action>(ToggleBookmark)
 nmap L <action>(NextTab)
 nmap H <action>(PreviousTab)
 
+"将Ctrl + s 映射为保存文档(也可以在VIM设置里将此快捷键设置为IDEA的快捷键)
+nmap <C-S> <action>(SaveAll)
+imap <C-S> <Esc><action>(SaveAll)
+
 " e: Extract
 " extract method/function 将选中的代码片段提取为一个独立的方法(Ctrl + Alt + M)
 vmap <leader>em <action>(ExtractMethod)
@@ -85,6 +95,8 @@ vmap <leader>ev <action>(IntroduceVariable)
 " ⭐️⭐️⭐️ Leader Keymaps ⭐️⭐️⭐️ =====================================
 " ================================================================================================
 "--将<leader>设置为 空格 键
+"可自行更改，只需更改双引号内的内容即可
+"推荐<leader>:  "空格"  ";"  "\"  "-"  ","
 let mapleader = " "
 
 
@@ -92,6 +104,8 @@ let mapleader = " "
 " ================================================================================================
 " 👻👻👻 Which-Key 👻👻👻
 " ================================================================================================
+
+"which-key的官方推荐配置
 set which-key
 set notimeout
 
@@ -131,6 +145,7 @@ set notimeout
 " gg: GenerateGetter-生成getter函数
 " gs: GenerateSetter-生成setter函数
 " ga: GenerateGetterAndSetter-生成getter和setter函数
+" ge: GenerateEquals-生成equals和hashcode的重写方法
 " gd: ShowTabbedFileHistory-显示文件的版本控制历史(git)
 "===================================== H =====================================
 " h: PreviousTab-切换到上一个标签页
@@ -143,7 +158,7 @@ set notimeout
 "===================================== L =====================================
 " l: NextTab-切换到下一个标签页
 "===================================== M =====================================
-" m: CodeGlance-打开/关闭地图
+" m: CodeGlance-打开/关闭地图(需要CodeGlance Pro插件)
 "===================================== N =====================================
 " n: NERDTreeOrNo ⭐️[目录]🎈
 " nn: NERDTreeFocus-将使焦点转移到 NERDTree 窗口(配置在NERDTree专栏)
@@ -161,7 +176,7 @@ set notimeout
 " q:
 "===================================== R =====================================
 " r: Run/Re ⭐️[目录]🎈
-" ru: Run-运行当前编辑器中的文件或类(Shift + F10)
+" ru: RunClass-运行当前编辑器中的文件或类(Shift + F10)
 " rr: ReRun-重新运行最近一次运行的程序或测试(Ctrl + Shift + F10)
 " rt: ReRunTests-重新运行最近一次运行的测试（Unit Tests）(Ctrl + Shift + F10)
 " rn: Rename-在代码中快速更改一个标识符的名称，并自动处理所有相关的引用(Shift + F6)
@@ -169,9 +184,9 @@ set notimeout
 " s: Show ⭐️[目录]🎈
 " ss: ShowFileStructure-显示当前打开文件的文件结构弹出窗口，其中包含文件中的类、方法、字段等结构(Alt + 7)
 " sb: ShowBookmarks-显示书签（Bookmarks）工具窗口，其中包含当前文件中设置的书签列表(Ctrl + F11)
-" sb: ShowParameterInfo-用于显示方法或函数的参数信息(Ctrl + p)
+" sp: ShowParameterInfo-用于显示方法或函数的参数信息(Ctrl + p)
 "===================================== T =====================================
-" t: Translate-翻译
+" t: Translate-翻译(需要Translate插件)
 "===================================== U =====================================
 " u:
 "===================================== V =====================================
@@ -279,9 +294,16 @@ nmap <leader>gs :action GenerateSetter<CR>
 "生成setter和getter
 let g:WhichKeyDesc_GitOrGenerate_GenerateGetterAndSetter = "<leader>ga GenerateGetterAndSetter"
 nmap <leader>ga <action>(GenerateGetterAndSetter)
+"生成 equals() 和 hashcode() 的重写方法
+let g:WhichKeyDesc_GitOrGenerate_GenerateEquals = "<leader>ge GenerateEquals"
+nmap <leader>ge <action>(GenerateEquals)
+"生成toString
+let g:WhichKeyDesc_GitOrGenerate_GenerateToString = "<leader>ge GenerateToString"
+nmap <leader>gt <action>(Actions.ActionsPlugin.GenerateToString)
 "diff 显示文件的版本控制历史(git)
 nmap <leader>gd <action>(Vcs.ShowTabbedFileHistory)
 let g:WhichKeyDesc_DebugOrDelete_ShowTabbedFileHistory = "<leader>gd ShowTabbedFileHistory"
+
 
 "========== h ==========
 "切换到上一个标签页
@@ -316,13 +338,13 @@ nmap <leader>m <action>(CodeGlance.toggle)
 "========== n ==========
 let g:WhichKeyDesc_NERDTreeOrNew = "<leader>n NERDTreeOrNew"
 
-"取消搜索高亮显示
+"取消搜索高亮显示(No light)
 let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nl NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
-"新建文件夹
+"在当前目录新建文件夹
 let g:WhichKeyDesc_NERDTreeOrNew_NewDir = "<leader>nd NewDir"
 nmap <leader>nd <action>(NewDir)
-"新建类
+"在当前目录新建类
 let g:WhichKeyDesc_NERDTreeOrNew_NewClass = "<leader>nc NewClass"
 nmap <leader>nc <action>(NewClass)
 
@@ -346,8 +368,8 @@ vmap <leader>P "+P
 let g:WhichKeyDesc_RunOrRe = "<leader>r RunOrRe"
 
 "运行当前编辑器中的文件或类(Shift + F10)
-let g:WhichKeyDesc_RunOrRe_Run = "<leader>ru Run"
-nmap <leader>ru <action>(Run)
+let g:WhichKeyDesc_RunOrRe_RunCalss = "<leader>ru RunClass"
+nmap <leader>ru :action RunClass<CR>
 "重新运行最近一次运行的程序或测试(Ctrl+Shift + F10)
 let g:WhichKeyDesc_RunOrRe_ReRun = "<leader>rr ReRun"
 nmap <leader>rr <action>(Rerun)
@@ -369,7 +391,7 @@ nmap <leader>ss <action>(FileStructurePopup)
 let g:WhichKeyDesc_Show_Bookmarks = "<leader>sb ShowBookmarks"
 nmap <leader>sb <action>(ShowBookmarks)
 "用于显示方法或函数的参数信息(Ctrl + p)
-let g:WhichKeyDesc_Show_ParameterInfo = "<leader>sb ShowParameterInfo"
+let g:WhichKeyDesc_Show_ParameterInfo = "<leader>sp ShowParameterInfo"
 nmap <leader>sp <action>(ParameterInfo)
 
 
@@ -381,7 +403,7 @@ vmap <leader>t <action>($EditorTranslateAction)
 
 
 "========== w ==========
-""""   不知道为什么，我反正有几个用不了   """"
+""""   包含自定义宏，可能无法使用   """"
 let g:WhichKeyDesc_Windows = "<leader>w Windows"
 
 "取消分割窗口 并 隐藏所有编辑器窗口
@@ -422,9 +444,12 @@ nmap <leader>zc <action>(CollapseAllRegions)
 " ================================================================================================
 " 🌸🌸🌸 NERDTree 🌸🌸🌸
 " ================================================================================================
-"<C-w-w>：在多个窗口切换
-"在目录中，使用 go 在本窗口中打开文件并保持光标在目录；
-"使用gi新建上下列窗口打开文件，并关闭目录
+"<C-w-w>：在多个打开的编辑器窗口之间切换
+"在目录中，按下 go 打开文件并保持光标在目录
+"在目录中，按下 gi 以上下并排窗口形式打开文件(并关闭目录)
+"光标在目录时，按Esc回到编辑器
+"编辑器和目录间切换存在许多功能类似的快捷键，相似但不完全相同
+"仅 打开/关闭 目录推荐使用<leader>wo 其次 Alt + 1
 
 "按下 <leader>nn 将使焦点转移到 NERDTree 窗口
 nnoremap <leader>nn :NERDTreeFocus<CR>
