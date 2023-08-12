@@ -162,7 +162,7 @@ set notimeout
 "===================================== N =====================================
 " n: NERDTreeOrNo ⭐️[目录]🎈
 " nn: NERDTreeFocus-将使焦点转移到 NERDTree 窗口(配置在NERDTree专栏)
-" nl: NoHighlight-取消搜索高亮显示
+" nh: NoHighlight-取消搜索高亮显示
 " nd: NewDir-新建文件夹
 " nc: NewClass-新建类
 "===================================== O =====================================
@@ -338,8 +338,8 @@ nmap <leader>m <action>(CodeGlance.toggle)
 "========== n ==========
 let g:WhichKeyDesc_NERDTreeOrNew = "<leader>n NERDTreeOrNew"
 
-"取消搜索高亮显示(No light)
-let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nl NoHighlight"
+"取消搜索高亮显示(No Highlight)
+let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nh NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
 "在当前目录新建文件夹
 let g:WhichKeyDesc_NERDTreeOrNew_NewDir = "<leader>nd NewDir"
