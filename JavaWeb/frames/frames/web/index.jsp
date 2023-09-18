@@ -10,12 +10,15 @@
 <html lang="en">
 <head>
 </head>
-<frameset rows="20%,80%" frameborder="yes">
-  <frame src="frames/top.html" name = "top" height="20%"/>
-  <frameset cols = "15%,*">
-    <frame src="frames/left.html" name ="left" />
-    <frameset rows="80%,*">
-      <frame src="frames/main.html" name ="right"/>
-  </frameset>
-  </frameset>
-</html></html>
+<body>
+
+</body>
+<%--<frameset rows="20%,80%" frameborder="yes">--%>
+<%--  <frame src="frames/top.html" name = "top" height="20%"/>--%>
+<%--  <frameset cols = "15%,*">--%>
+<%--    <frame src="frames/left.html" name ="left" />--%>
+<%--    <frameset rows="80%,*">--%>
+<%--      <frame src="frames/main.html" name ="right"/>--%>
+<%--  </frameset>--%>
+<%--  </frameset>--%>
+</html>
