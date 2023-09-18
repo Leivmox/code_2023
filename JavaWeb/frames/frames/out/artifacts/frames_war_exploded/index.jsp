@@ -11,11 +11,11 @@
 <head>
 </head>
 <frameset rows="20%,80%" frameborder="yes">
-  <frame src="top.html"name = "top" height="20%"/>
+  <frame src="frames/top.html" name = "top" height="20%"/>
   <frameset cols = "15%,*">
-    <frame src="left.html" name ="left" />
+    <frame src="frames/left.html" name ="left" />
     <frameset rows="80%,*">
-      <frame src="main.html" name ="right"/>
-    </frameset>
+      <frame src="frames/main.html" name ="right"/>
+  </frameset>
   </frameset>
 </html></html>
