@@ -176,12 +176,14 @@ set notimeout
 " q:
 "===================================== R =====================================
 " r: Run/Re ⭐️[目录]🎈
-" ru: RunClass-运行当前编辑器中的文件或类(Shift + F10)
+" ru: Run-运行
+" rc: RunClass-运行当前编辑器中的文件或类(Shift + F10)
 " rr: ReRun-重新运行最近一次运行的程序或测试(Ctrl + Shift + F10)
 " rt: ReRunTests-重新运行最近一次运行的测试（Unit Tests）(Ctrl + Shift + F10)
 " rn: Rename-在代码中快速更改一个标识符的名称，并自动处理所有相关的引用(Shift + F6)
 "===================================== S =====================================
 " s: Show ⭐️[目录]🎈
+" st: Stop
 " ss: ShowFileStructure-显示当前打开文件的文件结构弹出窗口，其中包含文件中的类、方法、字段等结构(Alt + 7)
 " sb: ShowBookmarks-显示书签（Bookmarks）工具窗口，其中包含当前文件中设置的书签列表(Ctrl + F11)
 " sp: ShowParameterInfo-用于显示方法或函数的参数信息(Ctrl + p)
@@ -368,8 +370,8 @@ vmap <leader>P "+P
 let g:WhichKeyDesc_RunOrRe = "<leader>r RunOrRe"
 
 "运行当前编辑器中的文件或类(Shift + F10)
-let g:WhichKeyDesc_RunOrRe_RunCalss = "<leader>ru RunClass"
-nmap <leader>ru :action RunClass<CR>
+let g:WhichKeyDesc_RunOrRe_RunCalss = "<leader>rc RunClass"
+nmap <leader>rc :action RunClass<CR>
 "重新运行最近一次运行的程序或测试(Ctrl+Shift + F10)
 let g:WhichKeyDesc_RunOrRe_ReRun = "<leader>rr ReRun"
 nmap <leader>rr <action>(Rerun)
@@ -379,6 +381,9 @@ nmap <leader>rt <action>(RerunTests)
 "在代码中快速更改一个标识符的名称，并自动处理所有相关的引用(Shift + F6)
 let g:WhichKeyDesc_RunOrRe_Rename = "<leader>rn Rename"
 map <leader>rn <action>(RenameElement)
+"运行
+let g:WhichKeyDesc_RunOrRe_Run = "<leader>ru Run"
+map <leader>ru <action>(Run)
 
 
 "========== s ==========
@@ -393,6 +398,9 @@ nmap <leader>sb <action>(ShowBookmarks)
 "用于显示方法或函数的参数信息(Ctrl + p)
 let g:WhichKeyDesc_Show_ParameterInfo = "<leader>sp ShowParameterInfo"
 nmap <leader>sp <action>(ParameterInfo)
+"Stop
+let g:WhichKeyDesc_Show_Stop = "<leader>st Stop"
+nmap <leader>st <action>(Stop)
 
 
 "========= t ==========
