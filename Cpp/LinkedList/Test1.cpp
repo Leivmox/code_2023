@@ -95,6 +95,7 @@ int main()
     for (int i = head; i != -1; i = ne[i])
         cout << e[i] << ' ';
     cout << endl;
+    system("pause");
 
     return 0;
 }
