@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>Inser title here</title>
+</head>
+
+<script type = "text/javascript">
+  var numEl;
+  var msgEl;
+  function fun(){
+    if(!numEl){
+      numEl = document.getElementById('num');
+    }
+    var money = parseInt(numEl.value);
+    if(isNaN(money)){
+      alert("请输入0~100");
+      numEl.value = '';
+      numEl.focus();
+      return ;
+    }
+    else if(money <1 || money > 100){
+      alert("请输入0~100");
+      numEl.focus();
+      return ;
+    }
+    var left1 = parseInt(money / 50);
+    var money1 = money % 50;
+
+    var left2 = parseInt(money1 / 20);
+    var money2 = money1 % 20;
+
+    var left3 = parseInt(money2 / 10);
+    var money3 = money2 % 10;
+
+    var left4 = parseInt(money3 / 5);
+    var money4 = money3 % 5;
+
+    var output = money + "元应该找零为：<br/> "+" 50元  <font color = 'red'>"+ left1 + "</font>张<br/>"+
+            "20元<font color = 'red' >" + left2 + "</font>张<br/>"+
+            "10元<font color = 'red' >" + left3 + "</font>张<br/>"+
+            "5元<font color = 'red' >" + left4 + "</font>张<br/>"+
+            "1元<font color = 'red' >" + money4 + "</font>张";
+    if(!msgEl){
+      msgEl = document.getElementById('msg');
+      msgEl.innerHTML = output;
+    }
+  }
+</script>
+<body>
+<center>
+  <h1>货币找零系统</h1>
+  请输入一个1~100的数值：<input type = "text" id = "num"/> &nbsp;
+  元&nbsp;<input type = "submit" value = "确定" onclick = "fun()"/>
+  <div id = "msg"></div>
+</center>
+</body>
+</html>
