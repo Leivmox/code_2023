@@ -2,6 +2,7 @@
 " 🍰🍰🍰 Extensions 🍰🍰🍰
 " ================================================================================================
 Plug 'preservim/nerdtree'
+Plug 'easymotion/vim-easymotion'
 
 "下列插件需要在IDEA中下载
 "ideaVim
@@ -16,6 +17,8 @@ Plug 'preservim/nerdtree'
 " ================================================================================================
 " 🐧🐧🐧 Basic settings 🐧🐧🐧
 " ================================================================================================
+
+set easymotion
 "设置在光标距离窗口顶部或底部一定行数时，开始滚动屏幕内容的行为
 set scrolloff=10
 
@@ -124,6 +127,7 @@ set notimeout
 " cc: CodeCompletion-自动补全
 " cd: CloseEditor-关闭当前标签页
 " ca: CloseAllEditors-关闭所有标签页
+" co: CloseAllEditorsButActive-关闭其他标签页
 "===================================== D =====================================
 " d: DebugOrDelete-[目录]🎈
 " dp: BreakPoint-打断点/解除断点
@@ -237,6 +241,9 @@ nmap <leader>ce :action CloseEditor<CR>
 "代码自动补全
 let g:WhichKeyDesc_CodeAndClose_CodeCompletion = "<leader>cc CodeCompletion)
 nmap <leader>cc <action>(CodeCompletion)
+"关闭其他标签页
+let g:WhichKeyDesc_CodeAndClose_CloseAllEditorsButActive = "<leader>co CloseAllEditorsButActive"
+nmap <leader>co :action CloseAllEditorsButActive<CR>
 
 
 "========== d ==========
@@ -469,5 +476,4 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 "按下 <C-f> 将在 NERDTree 文件资源管理器中定位当前编辑文件所在的节点，并使其可见
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
-
+nmap s <Plug>(easymotion-bd-n)
