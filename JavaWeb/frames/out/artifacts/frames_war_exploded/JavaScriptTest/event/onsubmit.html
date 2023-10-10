@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript">
+      function funons() {
+          alert("静态注册onsubmit事件---表单不合法");
+          return false;
+      }
+
+      onload = function () {
+          var fo01 = document.getElementById("form01");
+          fo01.onsubmit = function () {
+              alert("动态注册onsumbit事件---表单不合法");
+              return false;
+          };
+      };
+  </script>
+
+</head>
+<body>
+
+<form action="http://localhost:8080" method="get" onsubmit="return funons()">
+    <input type="submit" value="静态注册">
+
+</form>
+<form action="http://localhost:8080" method="get" id="form01">
+    <input type="submit" value="动态注册">
+
+</form>
+<input type="number" id="amount" min="1" max="100">
+</body>
+</html>
