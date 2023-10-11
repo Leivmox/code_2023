@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    window.onload = function () {
+
+        var btObj = document.getElementById("bt");
+        btObj.onclick = fun;
+    }
+
+    function fun() {
+        var b1Obj = document.getElementsByName("b1");
+
+        var max = -Infinity;
+        var min = Infinity;
+        var avg = 0;
+        for (var i = 0; i < b1Obj.length; i++) {
+            if (b1Obj[i].value == "") {
+                alert("请输入全部10本书的价格!");
+                sum = 0.0;
+                min = 0.0;
+                max = 0.0;
+                break;
+            } else if (b1Obj[i].value > 0) {
+                var x = parseFloat(b1Obj[i].value); // 将输入字段的值解析为浮点数i
+                if (x > max) {
+                    max = x;
+                }
+                if (x < min) {
+                    min = x;
+                }
+                avg += x;
+            } else {
+                alert("请输入正确的数值");
+                break;
+            }
+        }
+        avg = avg / 10;
+        document.getElementById("d1").textContent = "Max: " + max + ",
+		 Min: " + min + ", Avg: " + avg.toFixed(2);
+        console.log("Max: " + max);
+        console.log("Min: " + min);
+        console.log("Avg: " + avg);
+    }
+</script>
+请输入10本书的价格：<br>
+书1:<input name="b1" type="number"></a><br>
+书2:<input name="b1" type="number"></a><br>
+书3:<input name="b1" type="number"></a><br>
+书4:<input name="b1" type="number"></a><br>
+书5:<input name="b1" type="number"></a><br>
+书6:<input name="b1" type="number"></a><br>
+书7:<input name="b1" type="number"></a><br>
+书8:<input name="b1" type="number"></a><br>
+书9:<input name="b1" type="number"></a><br>
+书10:<input name="b1" type="number"></a><br>
+<input type="button" id="bt" value="计算"><br>
+<div id=d1></div>
+</body>
+</html>
