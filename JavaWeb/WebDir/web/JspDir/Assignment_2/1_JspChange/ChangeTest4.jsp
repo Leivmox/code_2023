@@ -7,7 +7,7 @@ exchange.html:
   <title>Insert title here</title>
 </head>
 <body>
-<form action="ChangeOut.jsp">
+<form action="succ/ChangeOut.jsp">
   <table border="1" align="center">
     <tr rowspan="2">
       <td>请输入找零数量：<br/><input name="many" type="text"></td>
