@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test2</title>
+</head>
+<body>
+<script type="text/javascript">
+  function fun() {
+    var max = 0;
+    var min = 99;
+    var avg = 0;
+    var x = new Array();
+    x[0] = 0;
+    x[1] = parseFloat(document.form.text1.value);
+    x[2] = parseFloat(document.form.text2.value);
+    x[3] = parseFloat(document.form.text3.value);
+    x[4] = parseFloat(document.form.text4.value);
+    x[5] = parseFloat(document.form.text5.value);
+    x[6] = parseFloat(document.form.text6.value);
+    x[7] = parseFloat(document.form.text7.value);
+    x[8] = parseFloat(document.form.text8.value);
+    x[9] = parseFloat(document.form.text9.value);
+    x[10] = parseFloat(document.form.text10.value);
+    // alert(x[0]);
+    // alert(x[1]);
+
+    // var temp=0;
+    for (i = 1; i < 11; i++) {
+      if (x[i] > max) {
+        max = x[i];
+      }
+      if (x[i] < min) {
+        min = x[i];
+      }
+      avg = avg + parseFloat(x[i]);
+    }
+
+    // avg = x[1] + x[2] + x[3];
+    avg = avg / 10;
+
+
+    document.form.text11.value = max;
+  }
+  // var aaa = 12;
+  // document.form.text11.value = aaa;
+
+
+  // alert("1234");
+</script>
+<form name="form">
+  book1<input type="text" name="text1"><br>
+  <input type="text" name="text2"><br>
+  <input type="text" name="text3"><br>
+  <input type="text" name="text4"><br>
+  <input type="text" name="text5"><br>
+  <input type="text" name="text6"><br>
+  <input type="text" name="text7"><br>
+  <input type="text" name="text8"><br>
+  <input type="text" name="text9"><br>
+  <input type="text" name="text10"><br>
+  <input type="button" onclick="fun()" value="sure"> <br>
+
+
+  <!--    <input name ="text11" type ="text"><br>-->
+  max<input type="text" name="text11"><br>
+  min<input type="text" name="text12"><br>
+  avg<input type="text" name="text13"><br>
+
+
+</form>
+</body>
+</html>

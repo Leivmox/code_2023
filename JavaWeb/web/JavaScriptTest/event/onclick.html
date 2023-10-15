@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript">
+    function funonclick() {
+      alert("静态注册onclick")
+    }
+
+    onload = function () {
+      var btn02 = document.getElementById("btn02");
+      btn02.onclick = function () {
+        alert("动态注册onclick");
+      };
+
+    };
+  </script>
+</head>
+<body>
+<button onclick="funonclick() ">a</button>
+<br>
+<button id="btn02">b</button>
+</body>
+</html>
