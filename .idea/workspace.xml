@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8be30ae1-7e89-482b-bc7e-4d3dd18a2072" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/C/old/1_13_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/C/old/1_13_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTest2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/ChangeTest2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTest3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/ChangeTest3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTest4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/ChangeTest4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTest5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/ChangeTest5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTestZsl.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/ChangeTestZsl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/JspChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/JspChange.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Test1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/Test1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Zsl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/Zsl.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/suc/ChangeOut.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeOut.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/suc/ChangeTest6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/ChangeTest6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/textForm_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/textForm_result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/Garbage/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/errorTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/Garbage/errorTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/suc/errorpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/errorpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/suc/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/suc/normal_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/3_error_page/normal_result.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +44,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Lambda/code2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Garbage" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange\Garbage" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -37,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694516467846</updated>
       <workItem from="1694516471002" duration="10000" />
+      <workItem from="1697362908130" duration="685000" />
     </task>
     <servers />
   </component>
