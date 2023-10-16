@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+  window.onload = function () {
+
+    var btObj = document.getElementById("bt");
+    btObj.onclick = fun;
+  }
+  var b1Obj = document.querySelectorAll(".b1");
+
+  function fun() {
+    var temp = 0;
+    var max = -Infinity;
+    var min = Infinity;
+    var avg = 0;
+
+    for (var i = 0; i < 10; i ++) {
+      var value = parseFloat(b1Obj[i].value); // 将输入字段的值解析为浮点数
+      if (!isNaN(value)) { // 检查是否有效的数字
+        if (value > max) {
+          max = value;
+        }
+        if (value < min) {
+          min = value;
+        }
+        avg += value;
+      }
+    }
+    if (avg > 0) { // 避免除以0
+      avg = avg / 10;
+    }
+    document.getElementById("d1").textContent = "Max: " + max + ", Min: " + min + ", Avg: " + avg.toFixed(2);
+  }
+
+</script>
+请输入10本书的价格：<br>
+书1:<input class="b1" type="number"><br>
+书2:<input class="b1" type="number"><br>
+书3:<input class="b1" type="number"><br>
+书4:<input class="b1" type="number"><br>
+书5:<input class="b1" type="number"><br>
+书6:<input class="b1" type="number"><br>
+书7:<input class="b1" type="number"><br>
+书8:<input class="b1" type="number"><br>
+书9:<input class="b1" type="number"><br>
+书10:<input class="b1" type="number"><br>
+<input type="button" id="bt" value="计算"><br>
+<div id=d1></div>
+</body>
+</html>
