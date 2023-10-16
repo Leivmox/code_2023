@@ -10,137 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaWeb2/.idea/frames.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaWeb2/frames.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/frames_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frames.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frames.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/BookAvg/DragonLst.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/BookAvg/GPTs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/BookAvg/MyAvg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/BookAvg/Zwbs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/DragonChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/GPTs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/GPTsOCRsChange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/LstChange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/MyChange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/OCRsChange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/ZslChange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ChangeTest/zwbs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ClassPractice/document3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ClassPractice/location1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/ClassPractice/timer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/CssTestDir/CssTest1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/CssTestDir/CssTest3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/CssTestDir/Csstest2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/CssTestDir/css/CssTest1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/ArgumentTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/ObjectTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/event/onblur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/event/onchange.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/event/onclick.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/event/onload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/event/onsubmit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JavaScriptTest/findmoney.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/ChangeTest2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/ChangeTest3.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/ChangeTest4.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/ChangeTest5.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/ChangeTestZsl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/JspChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/Test1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/Zsl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/suc/ChangeOut.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/suc/ChangeTest6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/1_JspChange/textForm_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/2_square/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/2_square/square.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/3_error_page/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/3_error_page/errorTest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/3_error_page/suc/errorpage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/3_error_page/suc/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/3_error_page/suc/normal_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/4_Logo/information.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/4_Logo/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/4_Logo/logo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/4_Logo/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/ChangeTest2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/ChangeTest3.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/ChangeTest4.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/ChangeTest5.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/JspChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/Test1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/suc/ChangeOut.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/suc/ChangeTest6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/JspChange/textForm_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/Logo/information.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/Logo/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/Logo/logo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/Logo/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/Logo/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/error_page/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/error_page/errorTest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/error_page/suc/errorpage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/error_page/suc/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/error_page/suc/normal_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/square/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Assignment_2/square/square.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Change/succ/ChangeOut.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Change/succ/ChangeTest6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest3.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest4.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest5.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/ChangeTest6.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/JspChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/Test1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/errorTest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/errorpage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/four_2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/four_2_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/succ/errorpage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/succ/four_2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/error_page/succ/four_2_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/exchange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/testForm_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/JspDir/textForm_result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/LogIn.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/Register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/WEB-INF/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/LogIn.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/Register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/introduction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/jianjie.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/main2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/frames/top.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/introduction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/test2/document3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/test2/location1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/test2/timer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/frames_war_exploded/top.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/Garbage/Zsl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/Garbage/Zsl.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/ChangeOut.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/suc/ChangeOut.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/ChangeTest6.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/suc/ChangeTest6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/errorpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/errorpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/normal_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/normal_result.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -152,6 +42,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -160,6 +53,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2WnQQhyDu3exF6tkzYXOtyl5tkP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -170,11 +66,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Lambda/code2023/JavaWeb/web/Jsp/Work_2/3_error_page/Finished2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.语言默认值",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Finished2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Finish" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange\Finish" />
       <recent name="D:\Lambda\code2023\JavaWeb\web" />
     </key>
   </component>
@@ -276,10 +186,16 @@
       <option name="presentableId" value="Default" />
       <updated>1697365850729</updated>
       <workItem from="1697365851894" duration="709000" />
+      <workItem from="1697458996835" duration="3239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
 </project>
