@@ -10,15 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/ChangeOut.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/suc/ChangeOut.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/ChangeTest6.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/1_JspChange/suc/ChangeTest6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/errorpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/errorpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/normal_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Jsp/Work_2/3_error_page/suc/normal_result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2_error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.4/formP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.4/formP1.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Lambda/code2023/JavaWeb/web/Jsp/Work_2/3_error_page/Finished2",
+    "last_opened_file_path": "D:/Lambda/code2023/JavaWeb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -187,6 +186,9 @@
       <updated>1697365850729</updated>
       <workItem from="1697365851894" duration="709000" />
       <workItem from="1697458996835" duration="3239000" />
+      <workItem from="1697546174266" duration="4000" />
+      <workItem from="1697546192281" duration="2000" />
+      <workItem from="1697546242777" duration="2670000" />
     </task>
     <servers />
   </component>
