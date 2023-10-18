@@ -15,8 +15,7 @@
     String str = "12";
     int number = Integer.parseInt(str);
 %>
-该数字的平方为：<%= number*number%><hr>
-<%--<form action="formP2.jsp">--%>
+该数字的平方为：<%= number*number%><hr> <%--<form action="formP2.jsp">--%>
     <form>
     <input type="text" name="number" value="<%= number%>">
    <input type="submit" value="到达p2">
