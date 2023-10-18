@@ -11,13 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2_error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Classroom/5.4/formP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.4/formP1.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -61,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -189,6 +184,9 @@
       <workItem from="1697546174266" duration="4000" />
       <workItem from="1697546192281" duration="2000" />
       <workItem from="1697546242777" duration="2670000" />
+      <workItem from="1697601796048" duration="42000" />
+      <workItem from="1697601848893" duration="373000" />
+      <workItem from="1697602314670" duration="743000" />
     </task>
     <servers />
   </component>
