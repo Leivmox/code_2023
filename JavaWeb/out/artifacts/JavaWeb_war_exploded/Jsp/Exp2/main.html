@@ -32,20 +32,20 @@
     //
     //     }
     // };
-
-
-    //显示“欢迎注册会员”
     function updateDivText() {
-        var isVip = document.getElementsByName("vip")[0].checked;//获取checkbox的值
-        var div = document.getElementById("div1");//获取div元素
+        var isVip = document.getElementsByName("vip")[0].checked;
+        var div = document.getElementById("div1");
 
         if (isVip) {
-            div.textContent = "欢迎注册为会员";//修改div元素的内容
+            div.textContent = "欢迎注册为会员";
         } else {
             div.textContent = ""; // 清空div文本
         }
     }
 
+    // window.onload = function () {
+    //     updateDivText(); // 初始加载时根据复选框状态设置文本
+    // };
 </script>
 
 <form name="form1" action="page1.jsp" method="post">

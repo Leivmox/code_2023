@@ -1,27 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: Leivzy
+  Date: 2023/10/18
+  Time: 16:14
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
 <body>
 <script type="text/javascript">
 
     function validate() {
         if (form1.account.value == "") {
             alert("账号不能为空");
-        } else if (form1.password.value == "") {
-            alert("密码不能为空");
-        } else if (form1.account.value == form1.password.value && document.getElementsByName("vip")[0].checked) {
-            alert("欢迎注册为会员");
-            form1.submit();
-        } else if (form1.account.value == form1.password.value) {
-            alert("登录成功");
-            form1.submit();
-        } else {
-            alert("登录失败");
+            return;
         }
+        if (form1.password.value == "") {
+            alert("密码不能为空");
+            return;
+        }
+        form1.submit();
     }
 
     // onload = function () {
@@ -32,20 +33,20 @@
     //
     //     }
     // };
-
-
-    //显示“欢迎注册会员”
     function updateDivText() {
-        var isVip = document.getElementsByName("vip")[0].checked;//获取checkbox的值
-        var div = document.getElementById("div1");//获取div元素
+        var isVip = document.getElementsByName("vip")[0].checked;
+        var div = document.getElementById("div1");
 
         if (isVip) {
-            div.textContent = "欢迎注册为会员";//修改div元素的内容
+            div.textContent = "欢迎注册为会员";
         } else {
             div.textContent = ""; // 清空div文本
         }
     }
 
+    // window.onload = function () {
+    //     updateDivText(); // 初始加载时根据复选框状态设置文本
+    // };
 </script>
 
 <form name="form1" action="page1.jsp" method="post">
