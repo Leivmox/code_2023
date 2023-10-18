@@ -1,26 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaWeb:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be30ae1-7e89-482b-bc7e-4d3dd18a2072" name="更改" comment="">
+    <list default="true" id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaWeb/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/Zsl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb/web/Jsp/Work_2/1_JspChange/Garbage/Zsl.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.6/urlP2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.6/urlP2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/4.7/pageTest2_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/4.7/pageTest2_error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.1/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.1/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Classroom/5.4/formP1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Textbook/5.4/formP1.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2VIH2YwU7jcRc9BMQype3PKjyqe" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2WnQQhyDu3exF6tkzYXOtyl5tkP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,29 +63,42 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Lambda/code2023/JavaWeb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.语言默认值",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Finished2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange" />
-      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page" />
-      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Garbage" />
-      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange\Garbage" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\3_error_page\Finish" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web\Jsp\Work_2\1_JspChange\Finish" />
+      <recent name="D:\Lambda\code2023\JavaWeb\web" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="JavaWeb:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JavaWeb_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="c8a5be52-eb20-4b24-a0b1-faafb175d995" />
+        <option name="BASE_DIRECTORY_NAME" value="378a8e23-ba17-4029-bcd1-7a985e6714dc" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -59,7 +106,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54778" />
+        <option name="DEBUG_PORT" value="55467" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -123,25 +170,34 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JavaWeb:war exploded" />
+        </option>
       </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="8be30ae1-7e89-482b-bc7e-4d3dd18a2072" name="更改" comment="" />
-      <created>1694516467846</created>
+      <changelist id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="" />
+      <created>1697365850729</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694516467846</updated>
-      <workItem from="1694516471002" duration="10000" />
-      <workItem from="1697362908130" duration="685000" />
-      <workItem from="1697364673180" duration="738000" />
-      <workItem from="1697365422747" duration="62000" />
+      <updated>1697365850729</updated>
+      <workItem from="1697365851894" duration="709000" />
+      <workItem from="1697458996835" duration="3239000" />
+      <workItem from="1697546174266" duration="4000" />
+      <workItem from="1697546192281" duration="2000" />
+      <workItem from="1697546242777" duration="2670000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
 </project>
