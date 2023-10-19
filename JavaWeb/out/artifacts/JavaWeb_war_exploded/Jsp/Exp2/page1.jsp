@@ -13,9 +13,8 @@
 <body>
 <%
     String acc = request.getParameter("account");
-//    out.print(acc);
-
 %>
+
 <form name="form2" action="page2.jsp" method="post">
     <input type="hidden" name="acc" value=<%= acc %>>
     请输入姓名: <input name="name" type="text"><br>
