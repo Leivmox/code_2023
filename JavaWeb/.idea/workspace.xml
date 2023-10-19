@@ -188,6 +188,7 @@
       <workItem from="1697631823784" duration="6863000" />
       <workItem from="1697643840146" duration="439000" />
       <workItem from="1697682349370" duration="546000" />
+      <workItem from="1697683097379" duration="737000" />
     </task>
     <servers />
   </component>
@@ -204,6 +205,24 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
+=======
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 64b4ca0eb39e8873ae971271bdca59f085136ad8
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
