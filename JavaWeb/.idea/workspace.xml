@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="843d01f5-f1bf-4ca9-a987-39198d16b115" name="更改" comment="">
+    <list default="true" id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -54,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -172,7 +174,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="843d01f5-f1bf-4ca9-a987-39198d16b115" name="更改" comment="" />
+      <changelist id="10ebc022-9568-4792-8c2c-68ff7e6e8b0d" name="更改" comment="" />
       <created>1697365850729</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -182,7 +184,12 @@
       <workItem from="1697546174266" duration="4000" />
       <workItem from="1697546192281" duration="2000" />
       <workItem from="1697546242777" duration="2670000" />
-      <workItem from="1697683283840" duration="654000" />
+      <workItem from="1697601796048" duration="42000" />
+      <workItem from="1697601848893" duration="373000" />
+      <workItem from="1697602314670" duration="743000" />
+      <workItem from="1697631823784" duration="6863000" />
+      <workItem from="1697643840146" duration="439000" />
+      <workItem from="1697682349370" duration="546000" />
     </task>
     <servers />
   </component>
