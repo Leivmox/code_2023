@@ -1,4 +1,9 @@
 JavaWeb/.idea/workspace.xml
-JavaWeb/.idea
+JavaWeb/.idea/
+JavaWeb\.idea\
+JavaWeb/out/
+JavaWeb\out\
+JavaWeb/target/
+JavaWeb\target\
 *.exe
 *.class
