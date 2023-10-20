@@ -9,3 +9,5 @@ JavaWeb\target\
 *.class
 JavaWeb/JavaWeb.iml
 JavaWeb\JavaWeb.iml
+.idea
+.vscode
