@@ -529,4 +529,4 @@ let g:WhichKeyDesc_easymotionkey = "<leader><leader> 快速跳转插件"
 
 
 nmap s <Plug>(easymotion-bd-n)
-let g:WhichKeyDesc_easymotion = "<leader>s 快速跳转"
+let g:WhichKeyDesc_easymotion = "s 快速跳转"
