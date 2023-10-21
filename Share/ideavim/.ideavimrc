@@ -52,6 +52,9 @@ nnoremap <C-j> :m +1<CR>
 nnoremap <C-k> :m -2<CR>
 inoremap <C-j> <Esc> :m +1<CR>gi
 inoremap <C-k> <Esc> :m -2<CR>gi
+xnoremap <C-j> :m '>+1<cr>gv=gv
+xnoremap <C-k> :m '<-2<cr>gv=gv
+
 
 "--将 jj 和 jk 映射为 <Esc>
 "jj和jk为主流配置，可按喜好自行调整
@@ -152,15 +155,15 @@ set notimeout
 " ge: GenerateEquals-生成equals和hashcode的重写方法
 " gd: ShowTabbedFileHistory-显示文件的版本控制历史(git)
 "===================================== H =====================================
-" h: PreviousTab-切换到上一个标签页
+" h: MoveToLeftMoveToLeft-跳转到左边的分割窗口
 "===================================== I =====================================
 " i: Insert ⭐快速查找并跳转到下一个以 ( 开始的函数或方法调用的位置️
 "===================================== J =====================================
-" j: InsertSemicolon⭐️ 普通模式下在行尾一个分号，然后进入插入模式并在当前行的下方新建一行
+" j: MoveToDown-跳转到下边的分割窗口
 "===================================== K =====================================
-" k:
+" k: MoveToUp-跳转到上边的分割窗口
 "===================================== L =====================================
-" l: NextTab-切换到下一个标签页
+" l: MoveToRight-跳转到右边的分割窗口
 "===================================== M =====================================
 " m: CodeGlance-打开/关闭地图(需要CodeGlance Pro插件)
 "===================================== N =====================================
@@ -199,10 +202,18 @@ set notimeout
 " v:
 "===================================== W =====================================
 " w: Window ⭐️[目录]🎈
-" wo: maximize-取消分割窗口 并 隐藏所有编辑器窗口
-" wl: splitWindowVertically-在垂直方向上分割编辑器窗口，将一个编辑器窗口拆分为两个垂直排列的窗格
-" wc: closeActiveWindow-关闭当前窗口或分割窗格
-" wh: HideActiveWindow-关闭提示窗口
+" wc: CloseSplitTab-关闭当前分割窗口(ctrl+w+c)
+" wu: Unsplit-恢复当前分割窗口
+" wa: UnsplitAll-恢复所有分割窗口
+" wml: MoveTabRight-向右拆分标签页
+" wmd: MoveTabDown-向下拆分标签页
+" wmc: SplitVertically-向右复制标签页
+" wmo: MoveEditorToOppositeTabGroup-在另一边打开（前提是有另一边的分割窗口）
+" wl: MoveToRight-跳转到右边的窗口(<c-w>l)
+" wh: MoveToLeft-跳转到左边的窗口(<c-w>h)
+" wk: MoveToUp-跳转到上边的窗口(<c-w>k)
+" wj: MoveToDown-跳转到下边的窗口(<c-w>j)
+" wwa: HideActiveWindow-关闭提示窗口(Shift+Esc)
 "===================================== X =====================================
 " x:
 "===================================== Y =====================================
@@ -229,17 +240,17 @@ let g:WhichKeyDesc_LeaderKeymap= "<leader> 🌟🌟🌟LeaderKeymap🌟🌟🌟"
 "========== b ==========
 
 
-"========== c ==========
+"========== c =========c
 let g:WhichKeyDesc_CodeAndClose = "<leader>c CodeAndClose"
 
 "关闭所有标签页
 let g:WhichKeyDesc_CodeAndClose_CloseAllEditors = "<leader>ca CloseAllEditors"
 nmap <leader>ca <action>(CloseAllEditors)
 "关闭当前标签页
-let g:WhichKeyDesc_CodeAndClose_CloseEditor = "<leader>ce CloseEditor"
-nmap <leader>ce :action CloseEditor<CR>
+let g:WhichKeyDesc_CodeAndClose_CloseEditor = "<leader>cd CloseEditor"
+nmap <leader>cd :action CloseEditor<CR>
 "代码自动补全
-let g:WhichKeyDesc_CodeAndClose_CodeCompletion = "<leader>cc CodeCompletion)
+let g:WhichKeyDesc_CodeAndClose_CodeCompletion = "<leader>cc CodeCompletion"
 nmap <leader>cc <action>(CodeCompletion)
 "关闭其他标签页
 let g:WhichKeyDesc_CodeAndClose_CloseAllEditorsButActive = "<leader>co CloseAllEditorsButActive"
@@ -315,9 +326,9 @@ let g:WhichKeyDesc_DebugOrDelete_ShowTabbedFileHistory = "<leader>gd ShowTabbedF
 
 
 "========== h ==========
-"切换到上一个标签页
-let g:WhichKeyDesc_PreviousTab = "<leader>h PreviousTab"
-nmap <leader>h :action PreviousTab<CR>
+"跳转到左边的分割窗口
+let g:WhichKeyDesc_Show_MoveToLeft = "<leader>h MoveToLeft"
+nmap <leader>h <c-w>h
 
 
 "========== i ==========
@@ -327,15 +338,21 @@ nmap <leader>i f(a
 
 
 "========== j ==========
-"普通模式下在行尾一个分号，然后进入插入模式并在当前行的下方新建一行
-let g:WhichKeyDesc_InsertSemicolon = "<leader>j InsertSemicolon"
-nmap <leader>j A;<ESC>o
+"跳转到下边的分割窗口
+let g:WhichKeyDesc_Show_MoveToDown = "<leader>j MoveToDown"
+nmap <leader>j <c-w>j
+
+
+"========== k ==========
+"跳转到上边的分割窗口
+let g:WhichKeyDesc_Show_MoveToUp = "<leader>k MoveToUp"
+nmap <leader>k <c-w>k
 
 
 "========== l ==========
-"切换到下一个标签页
-let g:WhichKeyDesc_NextTab = "<leader>l NextTab"
-nmap <leader>l :action NextTab<CR>
+"跳转到右边的窗口
+let g:WhichKeyDesc_Show_MoveToRight = "<leader>l MoveToRight"
+nmap <leader>l <c-w>l
 
 
 "========== m ==========
@@ -420,25 +437,42 @@ vmap <leader>t <action>($EditorTranslateAction)
 "========== w ==========
 """"   包含自定义宏，可能无法使用   """"
 let g:WhichKeyDesc_Windows = "<leader>w Windows"
+let g:WhichKeyDesc_HideActiveWindow = "<leader>ww HideActiveWindow"
+let g:WhichKeyDesc_Move = "<leader>wm Move"
 
-"取消分割窗口 并 隐藏所有编辑器窗口
-let g:WhichKeyDesc_Windows_maximize = "<leader>wo maximize"
-nmap <leader>wo <action>(UnsplitAll) \| <action>(HideAllWindows)
-"在垂直方向上分割编辑器窗口，将一个编辑器窗口拆分为两个垂直排列的窗格(???)
-let g:WhichKeyDesc_Windows_splitWindowVertically = "<leader>wl splitWindowVertically"
-nmap <leader>wl <action>(Macro.SplitVertically)
+"向右拆分标签页
+let g:WhichKeyDesc_Show_MoveTabRight = "<leader>wml MoveTabRight"
+nmap <leader>wml <action>(MoveTabRight)
+"向下拆分标签页
+let g:WhichKeyDesc_Show_MoveTabDown = "<leader>wmd MoveTabDown"
+nmap <leader>wmd <action>(MoveTabDown)
+"在另一边打开（前提是有另一边的分割窗口）
+let g:WhichKeyDesc_Show_MoveEditorToOppositeTabGroup = "<leader>wmo MoveEditorToOppositeTabGroup"
+nmap <leader>wmo <action>(MoveEditorToOppositeTabGroup)
+"向右复制标签页
+let g:WhichKeyDesc_Show_SplitVertically = "<leader>wmc SplitVertically"
+nmap <leader>wmc <action>(SplitVertically)
+
+"取消所有分割窗口
+let g:WhichKeyDesc_Windows_UnsplitAll = "<leader>wa UnsplitAll"
+nmap <leader>wa <action>(UnsplitAll)
 "关闭当前窗口或分割窗格
 let g:WhichKeyDesc_Windows_closeActiveWindow = "<leader>wc closeActiveWindow"
 nmap <leader>wc <c-w>c
-let g:WhichKeyDesc_Windows_HideActiveWindow = "<leader>wh HideActiveWindow"
-nmap <leader>wh <Alt-6>
+"取消拆分当前分割窗口
+let g:WhichKeyDesc_Windows_Unsplit = "<leader>wu Unsplit"
+nmap <leader>wu <action>(Unsplit)
+
+"关闭提示窗口
+let g:WhichKeyDesc_Windows_HideActiveWindow = "<leader>wwa HideActiveWindow"
+nmap <leader>wwa <action>(HideActiveWindow)
 
 
 "========== y ==========
-"将 "+ 简化为 <leader>
+"普通模式下将 "+ (复制到剪切板）简化为 <leader>y
 let g:WhichKeyDesc_CopyClipboard = "<leader>y CopyClipboard"
 vmap <leader>y "+y
-"将 "+ 简化为 <leader>
+"可视模式下将 "+ (复制到剪切板）简化为 <leader>y
 let g:WhichKeyDesc_CopyClipboard= "<leader>y CopyClipboard"
 nmap <leader>y "+yy
 
