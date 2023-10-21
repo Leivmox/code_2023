@@ -1,3 +1,6 @@
+该“中文版”指whichkey的窗口提示为中文
+另外一个版本的供各位拿去装逼用[Doge]
+
 " ================================================================================================
 " 🍰🍰🍰 Extensions 🍰🍰🍰
 " ================================================================================================
@@ -66,16 +69,21 @@ imap jk <Esc>
 map Q gq
 "跳转到下一个错误或警告
 nmap ge <action>(GotoNextError)
+let g:WhichKeyDesc_GotoNextError = "ge 跳转到下一个错误或警告"
 "在源代码和测试代码之间快速切换
 nmap gt <action>(GotoTest)
+let g:WhichKeyDesc_GotoTest = "gt 在源代码和测试代码之间快速切换"
 "将光标移动到上一个方法的声明处
-nmap gm <action>(MethodUp)
 " last changed in current buffer(file)
+nmap gm <action>(MethodUp)
+let g:WhichKeyDesc_MethodUp = "gm 将光标移动到上一个方法的声明处"
 "跳转到当前接口或抽象类的实现处
 nmap ga <action>(GotoImplementation)
+let g:WhichKeyDesc_GotoImplementation = "ga 跳转到当前接口或抽象类的实现处"
 
 " bookmark 切换书签
 nmap ma <action>(ToggleBookmark)
+let g:WhichKeyDesc_bookmark = "ma 书签"
 
 "切换标签页
 nmap L <action>(NextTab)
