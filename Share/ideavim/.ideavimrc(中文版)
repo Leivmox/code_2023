@@ -418,7 +418,7 @@ map <leader>ru <action>(Run)
 
 
 "========== s ==========
-let g:WhichKeyDesc_Show = "<leader>s 显示"
+let g:WhichKeyDesc_Show = "<leader>s 显示&停止"
 
 "显示当前打开文件的文件结构弹出窗口，其中包含文件中的类、方法、字段等结构(Alt + 7)
 let g:WhichKeyDesc_Show_FileStructure = "<leader>ss 显示文件结构"
