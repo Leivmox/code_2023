@@ -13,7 +13,7 @@ public class Dao {
     public Connection connection() {
         Connection con = null;
         try {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             //链接数据库
             con = DriverManager.getConnection(jdbcUrl, userName, pwd);
             this.con = con;

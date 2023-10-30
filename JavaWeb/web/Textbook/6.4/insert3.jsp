@@ -28,7 +28,7 @@
     Connection con = dao.connection();//获得连接对象
     String tableName = "test";//数据库中的一个表的表名
 
-    String sql = "INSERT INTO test(id,name,age) VALUES(???)";
+    String sql = "INSERT INTO test(id,name,age) VALUES(?,?,?)";
     PreparedStatement ps = con.prepareStatement(sql);
     ps.setString(1, id);
     ps.setString(2, name);
