@@ -20,9 +20,9 @@
     String savedColor = null;
     Cookie[] cookies = request.getCookies();
     if (cookies != null) {
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("selectedColor")) {
-                savedColor = cookie.getValue();
+        for (int i = 0; i < cookies.length; i++) {
+            if (cookies[i].getName().equals("selectedColor")) {
+                savedColor = cookies[i].getValue();
                 break;
             }
         }
@@ -44,6 +44,5 @@
 </head>
 <body>
 <h1>欢迎!</h1>
-<!-- 其他欢迎页面的内容 -->
 </body>
 </html>
