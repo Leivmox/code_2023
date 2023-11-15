@@ -16,9 +16,6 @@
     // Java代码段:判断是否有存在的cookie，如果有则直接跳转到welcome.jsp
     Cookie[] cookies = request.getCookies();// 获取请求中的所有cookie
     if (cookies != null) {// 如果存在cookie
-%>
-<%= "123"%>
-<%
         for (int i = 0; i < cookies.length; i++)
 //            if (cookie.getName().equals("loggedInUser") && cookie.getValue().equals("true")) {
             if (cookies[i].getName().equals("loggedInUser")) {// 检查cookie的名称是否为 "loggedInUser"
