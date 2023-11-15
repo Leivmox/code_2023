@@ -44,5 +44,7 @@
 </head>
 <body>
 <h1>欢迎!</h1>
+
+<%="背景颜色：" + savedColor%>
 </body>
 </html>

@@ -12,7 +12,6 @@
     <title>Login Page</title>
 </head>
 <body>
-<%= "123"%>
 <%
     // Java代码段:判断是否有存在的cookie，如果有则直接跳转到welcome.jsp
     Cookie[] cookies = request.getCookies();// 获取请求中的所有cookie
@@ -30,16 +29,16 @@
     }
 %>
 <form id="loginForm" action="loginValidation.jsp">
-    <label for="username">Username:</label>
+    <label for="username">用户名:</label>
     <input type="text" id="username" name="username" required><br><br>
 
-    <label for="password">Password:</label>
+    <label for="password">密码:</label>
     <input type="password" id="password" name="password" required><br><br>
 
-    <label for="keepLoggedInUser">Keep me logged in:</label>
+    <label for="keepLoggedInUser">保持登录状态:</label>
     <input type="checkbox" id="keepLoggedInUser" name="keepLoggedInUser"><br><br>
 
-    <input type="submit" value="Login">
+    <input type="submit" value="登录">
 </form>
 </body>
 </html>
