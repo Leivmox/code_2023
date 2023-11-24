@@ -7,7 +7,5 @@ JavaWeb/target/
 JavaWeb\target\
 *.exe
 *.class
-JavaWeb/JavaWeb.iml
-JavaWeb\JavaWeb.iml
 .idea
 .vscode
