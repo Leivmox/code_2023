@@ -9,7 +9,7 @@
 <%
     // 检查用户是否已经登录，如果没有则重定向到登录页面
     if (session.getAttribute("loggedInUser") == null) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("loginValidation.jsp");
     }
 %>
 <html>

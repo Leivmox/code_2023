@@ -24,7 +24,7 @@
         response.sendRedirect("welcome.jsp");
     } else {
         // 登录失败，重定向回登录页面
-       response.sendRedirect("login.jsp");
+       response.sendRedirect("loginValidation.jsp");
     }
 
 

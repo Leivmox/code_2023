@@ -31,7 +31,7 @@
 <%
     // 检查用户是否已登录，否则重定向到登录页面
     if (session.getAttribute("loggedInUser") == null) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("loginValidation.jsp");
     }
 %>
 <h1>Welcome!</h1>

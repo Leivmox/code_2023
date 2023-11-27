@@ -24,7 +24,7 @@
     String str = (String) session.getAttribute("username");
     if (str == null) {
         // 如果未登录，重定向回登录页面
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("loginValidation.jsp");
     }
 %>
 

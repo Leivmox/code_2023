@@ -22,6 +22,6 @@
     session.setAttribute("loggedInUser1", username);
         response.sendRedirect("welcome.jsp");
 //    } else {
-//        response.sendRedirect("login.jsp");
+//        response.sendRedirect("loginValidation.jsp");
 //    }
 %>
