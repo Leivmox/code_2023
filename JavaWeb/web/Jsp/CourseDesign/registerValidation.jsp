@@ -11,7 +11,7 @@
 <%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.ResultSet" %>
 
-
+<body>
 <%
     Dao dao = new Dao();//创建Dao对象
     Connection con = dao.connection();//获得连接对象
@@ -31,28 +31,48 @@
             String account2 = rs.getString("account");
             if (account2.equals(account)) {
 //                response.sendRedirect("fail.jsp");
-                request.getRequestDispatcher("fail.jsp").forward(request, response);
-            }
-        }
-        String countQuery = "SELECT COUNT(*) AS userCount FROM user";
+//                request.getRequestDispatcher("fail.jsp").forward(request, response);
+%>
+<script type="text/javascript">//不相等则弹出警告并跳转回main.html
+window.alert("已存在该用户");
+window.document.location.href = "main.html"
+</script>
+<%
 
-        //获取数据库中用户数量
-        ResultSet countResult = stat.executeQuery(countQuery);
-        int userCount = 0;
-        int newUserID = 0;
-        if (countResult.next()) {
-            userCount = countResult.getInt("userCount");
-            newUserID = userCount + 1;//将新用户ID按顺序增加
+
         }
-        String sql1 = "INSERT INTO user(ID, name, password, type, count, account) VALUES (" + newUserID + ", '" + name + "', '" + password + "', 'nom',0, '" + account + "')";
-        int i = stat.executeUpdate(sql1);
-        //跳转到成功页面
+    }
+    String countQuery = "SELECT COUNT(*) AS userCount FROM user";
+
+    //获取数据库中用户数量
+    ResultSet countResult = stat.executeQuery(countQuery);
+    int userCount = 0;
+    int newUserID = 0;
+    if (countResult.next()) {
+        userCount = countResult.getInt("userCount");
+        newUserID = userCount + 1;//将新用户ID按顺序增加
+    }
+    String sql1 = "INSERT INTO user(ID, name, password, type, count, account) VALUES (" + newUserID + ", '" + name + "', '" + password + "', 'nom',0, '" + account + "')";
+//
+//
+//        String sql1 = "INSERT INTO user(ID,name,password,type,count,account) VALUES("+newUserID+","+name+","+password+","+nom+","+account+")";
+    int i = stat.executeUpdate(sql1);
+    //跳转到成功页面
 //        response.sendRedirect("succes.jsp");
-        request.getRequestDispatcher("succes.jsp").forward(request, response);
+//        request.getRequestDispatcher("succes.jsp").forward(request, response);
+%>
+< script
+type = "text/javascript" >//不相等则弹出警告并跳转回main.html
+    window.alert("成功");
+window.document.location.href = "main.html";
+</script
+<%
     } else {
 
         //若未接收到表单的值（即未按照正确步骤打开此页面），跳转到回主页
         response.sendRedirect("main.html");
 //        request.getRequestDispatcher("main.html").forward(request, response);
+
     }
 %>
+</body>

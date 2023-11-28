@@ -22,7 +22,7 @@
   String text=request.getParameter("account");
   String password=request.getParameter("password");
 //  Connection conn = getConnection();
-  session.setAttribute("user",text);
+  session.setAttribute("account",text);
   Statement stat = con.createStatement();
   String sql =
           "SELECT text,password FROM T_LOGIN";

@@ -7,7 +7,7 @@
 <html>
 <body>
 <%
-    String name = (String) session.getAttribute("user");
+    String name = (String) session.getAttribute("account");
     String si = "0";
     String teacherno = request.getParameter("teacherno");
 
