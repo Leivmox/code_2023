@@ -25,8 +25,8 @@
 
     //判断是否正常登录
     if (account == null) {
-        // 如果未登录，重定向回登录页面
-        response.sendRedirect("main.html");
+        // 如果未登录，重定向到错误页面
+        response.sendRedirect("jumpJsp/Error1.jsp");
         return;
     } else {
         //连接数据库
@@ -51,7 +51,7 @@
             }
         }
 
-        
+
         //==========判断是否重复借阅==========//
         //定义sql语句，查询borrow表中，userID为“userID”的所有元组 中的bookID
         String borrowSql = "SELECT bookID FROM borrow WHERE userID='" + userID + "'";

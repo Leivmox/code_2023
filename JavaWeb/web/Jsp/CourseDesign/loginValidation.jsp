@@ -40,7 +40,7 @@
 
         if (d_password.equals(password)) {//判断表单和数据库中的账号密码是否相等
 
-            //储存用户数据 到session
+            //==========储存用户数据到session==========//
             session.setAttribute("account", account);
             session.setAttribute("password", d_password);
             session.setAttribute("type", d_type);
@@ -48,7 +48,7 @@
             session.setAttribute("name", d_name);
             session.setAttribute("count", d_count);
 
-            //判断是否为管理员用户
+            //==========判断是否为管理员用户==========//
             if (d_type.equals("nom")) {//nom：normal
                 response.sendRedirect("nomHome.jsp");
             }

@@ -33,8 +33,8 @@
     String userID = (String) session.getAttribute("id");
     //判断是否已经登录
     if (account == null) {
-        // 如果未登录，重定向回登录页面
-        response.sendRedirect("main.html");
+        // 如果未登录，重定向到错误页面
+        response.sendRedirect("jumpJsp/Error1.jsp");
     }
 
     Dao dao = new Dao();//创建Dao对象
@@ -53,14 +53,15 @@
     String name = rs.getString("BOOKNAME");//获取数据库中的图书名称
     String author= rs.getString("AUTHOR");//获取数据库中的图书作者
     String price= rs.getString("PRICE");//获取数据库中的图书价格
-    //声明一个status，初始化为“可借阅”
-    String status = "可借阅";
 
+    //==========实现显示“借阅状态”的功能==========//
+    //声明一个status，初始化为“借阅状态”为“可借阅”
+    String status = "可借阅";
     ResultSet rs2 =stat2.executeQuery(sql2);//执行查询语句sql2，将查询到的bookID放入rs2
     while (rs2.next()){
         String bookID = rs2.getString("BOOKID");//判断该userID是否已经借阅该图书
         if (bookID.equals(no)){//no为52行获取到的BookNum
-            status = "已借阅";
+            status = "已借阅";//将“借阅状态”改为“已借阅”
         }
     }
 
