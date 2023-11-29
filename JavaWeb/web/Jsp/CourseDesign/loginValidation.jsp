@@ -57,9 +57,9 @@
             }
         }
     }
-//    }
 %>
-<script type="text/javascript">//不相等则弹出警告并跳转回main.html
+<%--//不相等则弹出警告并跳转回main.html--%>
+<script type="text/javascript">
 window.alert("账号或者密码错误");
 window.document.location.href = "main.html";
 </script>

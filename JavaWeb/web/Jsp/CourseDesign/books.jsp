@@ -16,8 +16,16 @@
     <title>借阅</title>
 </head>
 <body>
+<%
+    //==========判断是否已经登录==========//
+    String account = (String) session.getAttribute("account");
+    if (account == null) {
+        // 如果未登录，重定向到错误页面
+        response.sendRedirect("jumpJsp/Error1.jsp");
+    }
+%>
 <%--定义图书表格的开头--%>
-<table border="1" cellpadding="0">
+<table border="1">
     <caption>图书管理系统</caption>
     <tr>
         <td>编号</td>
@@ -28,14 +36,9 @@
         <td>&nbsp;</td>
     </tr>
         <%
-    //获取session中的用户account和id
-    String account = (String) session.getAttribute("account");
+    //获取session中的用户id
     String userID = (String) session.getAttribute("id");
-    //判断是否已经登录
-    if (account == null) {
-        // 如果未登录，重定向到错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
-    }
+
 
     Dao dao = new Dao();//创建Dao对象
     Connection con = dao.connection();//获得连接对象
@@ -43,16 +46,20 @@
     Statement  stat= con.createStatement();
     Statement  stat2= con.createStatement();
 
-    String sql = "SELECT * FROM books";//定义一个查询语句
-    String sql2 = "SELECT BOOKID FROM borrow WHERE userID='"+ userID +"'";//定义一个查询语句
+    //定义sql语句：查询books表所有元素
+    String sql = "SELECT * FROM books";
+    //定义sql语句：查询borrow表中，userID为“userID”的所有元素
+    String sql2 = "SELECT BOOKID FROM borrow WHERE userID='"+ userID +"'";
 
-    ResultSet rs =stat.executeQuery(sql);//执行sql询语句，并将获取到值放入rs集合
+    ResultSet rs =stat.executeQuery(sql);//执行sql语句，并将获取到值放入rs集合
 
-  while (rs.next()) {//循环rs集合
-    String no = rs.getString("BOOKNUM");//获取数据库中的图书编号
-    String name = rs.getString("BOOKNAME");//获取数据库中的图书名称
-    String author= rs.getString("AUTHOR");//获取数据库中的图书作者
-    String price= rs.getString("PRICE");//获取数据库中的图书价格
+
+//==========通过循环，将rs集合中（数据库中）的值取出来并放到表格中==========//
+  while (rs.next()) {
+    String no = rs.getString("BOOKNUM");//获取数据库中本次循环得到的的图书编号
+    String name = rs.getString("BOOKNAME");//获取数据库中本次循环得到的图书名称
+    String author= rs.getString("AUTHOR");//获取数据库中本次循环得到的图书作者
+    String price= rs.getString("PRICE");//获取数据库中本次循环得到的图书价格
 
     //==========实现显示“借阅状态”的功能==========//
     //声明一个status，初始化为“借阅状态”为“可借阅”
@@ -66,24 +73,20 @@
     }
 
 %>
-<%--    这是一个循环表格，次表格仍包含在上面的jsp中的while循环中--%>
+    <%--||循环表格||，该表格 仍包含在上面的jsp中的while循环中--%>
     <tr>
-        <td><%=no%>
-        </td>
-        <td><%=name%>
-        </td>
-        <td><%=author%>
-        </td>
-        <td><%=price%>
-        </td>
-        <td><%=status%>
-        </td>
-<%--        创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
+        <td><%=no%></td>
+        <td><%=name%></td>
+        <td><%=author%></td>
+        <td><%=price%></td>
+        <td><%=status%></td>
+        <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
         <td><a href="borrowHandle.jsp?no=<%=no%>&name=<%=name%>">借阅</a></td>
     </tr>
         <%
     }
 %>
+<%--//返回链接--%>
     <a href="nomHome.jsp">返回</a>
 </body>
 </html>
