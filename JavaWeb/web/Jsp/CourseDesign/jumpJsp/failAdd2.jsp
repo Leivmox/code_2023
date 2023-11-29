@@ -9,8 +9,7 @@
 <html>
 
 <body>
-<script>
-    type = "text/javascript" >
+<script type = "text/javascript">
         window.alert("借阅数量达到上限！");
     window.document.location.href = "../books.jsp";
 </script>

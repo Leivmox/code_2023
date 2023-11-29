@@ -84,6 +84,6 @@
         <%
     }
 %>
-
+    <a href="nomHome.jsp">返回</a>
 </body>
 </html>

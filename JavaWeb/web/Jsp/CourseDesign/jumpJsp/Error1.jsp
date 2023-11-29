@@ -11,8 +11,7 @@
     <title>Error</title>
 </head>
 <body>
-<script>
-    type = "text/javascript" >
+<script type = "text/javascript">
         window.alert("未登录！");
     window.document.location.href = "../main.html";
 </script>

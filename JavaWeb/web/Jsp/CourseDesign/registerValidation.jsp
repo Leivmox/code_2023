@@ -40,16 +40,16 @@
         } else {
 
             //==========执行注册==========//
-            //获取数据库中用户数量 userCount
-            String countQuery = "SELECT COUNT(*) AS userCount FROM user";
-            ResultSet countResult = stat.executeQuery(countQuery);
-            int userCount = 0;
+            //获取数据库中用户最大ID
+            String countQuery = "SELECT MAX(ID) AS maxID FROM user";
+            ResultSet maxIDResult = stat.executeQuery(countQuery);
             int newUserID = 0;
-            if (countResult.next()) {
-                userCount = countResult.getInt("userCount");
-                //将新用户ID按顺序增加
-                newUserID = userCount + 1;
+
+            if (maxIDResult.next()) {
+                int maxID = maxIDResult.getInt("maxID");
+                newUserID = maxID + 1;//将最大ID+1 并赋给newUserID
             }
+            //定义sql语句并执行
             String sql1 = "INSERT INTO user(ID, name, password, type, count, account) VALUES (" + newUserID + ", '" + name + "', '" + password + "', 'nom',0, '" + account + "')";
             int i = stat.executeUpdate(sql1);
 

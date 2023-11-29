@@ -11,10 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    type = "text/javascript" >
+<script type = "text/javascript">
         window.alert("成功");
-    window.document.location.href = "main.html";
+    window.document.location.href = "../main.html";
 </script>
 </body>
 </html>

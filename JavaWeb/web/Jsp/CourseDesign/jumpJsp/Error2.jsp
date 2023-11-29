@@ -13,7 +13,7 @@
 <body>
 <script type="text/javascript">
     window.alert("已存在该用户");
-    window.document.location.href = "main.html"
+    window.document.location.href = "../main.html"
 </script>
 </body>
 </html>

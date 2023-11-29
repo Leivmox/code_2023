@@ -9,8 +9,7 @@
 <html>
 
 <body>
-<script>
-    type = "text/javascript" >
+<script type = "text/javascript">
         window.alert("您已借阅此图书！");
     window.document.location.href = "../books.jsp";
 </script>
