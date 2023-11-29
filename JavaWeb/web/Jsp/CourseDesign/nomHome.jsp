@@ -13,7 +13,7 @@
 <%@ page import="java.sql.ResultSet" %>
 <html>
 <head>
-    <title>NomHome</title>
+    <title>主页</title>
 </head>
 <%
     //从session中获取用户 的account和name

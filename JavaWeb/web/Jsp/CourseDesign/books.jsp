@@ -13,7 +13,7 @@
 <%@ page import="java.sql.ResultSet" %>
 <html>
 <head>
-    <title>Books</title>
+    <title>借阅</title>
 </head>
 <body>
 <%--定义图书表格的开头--%>
