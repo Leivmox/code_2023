@@ -4,7 +4,7 @@
   Date: 2023/11/27
   Time: 10:49
   To change this template use File | Settings | File Templates.
-  借书页面
+  借书的展示页面
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="conn.Dao" %>
