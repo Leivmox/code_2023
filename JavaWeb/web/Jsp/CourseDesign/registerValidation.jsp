@@ -25,11 +25,12 @@
     if (account != null && !account.isEmpty()) {
 
         Statement stat = con.createStatement();
-        String sql = "SELECT account FROM user";
+        String sql = "SELECT account FROM user WHERE account='"+account+"'";
         ResultSet rs = stat.executeQuery(sql);
-        while (rs.next()) {
-            String account2 = rs.getString("account");
-            if (account2.equals(account)) {
+//        while (rs.next()) {
+       if (rs.next()){
+//            String account2 = rs.getString("account");
+//            if (account2.equals(account)) {
 //                response.sendRedirect("fail.jsp");
 //                request.getRequestDispatcher("fail.jsp").forward(request, response);
 %>
@@ -40,7 +41,7 @@ window.document.location.href = "main.html"
 <%
 
 
-        }
+//        }
     }
     String countQuery = "SELECT COUNT(*) AS userCount FROM user";
 
@@ -61,11 +62,11 @@ window.document.location.href = "main.html"
 //        response.sendRedirect("succes.jsp");
 //        request.getRequestDispatcher("succes.jsp").forward(request, response);
 %>
-< script
+<script>
 type = "text/javascript" >//不相等则弹出警告并跳转回main.html
     window.alert("成功");
 window.document.location.href = "main.html";
-</script
+</script>
 <%
     } else {
 

@@ -24,24 +24,27 @@
 //  Connection conn = getConnection();
     Statement stat = con.createStatement();
     String sql =
-            "SELECT account,password,type,name,ID,count FROM user";
+            "SELECT account,password,type,name,ID,count FROM user WHERE account='" + account + "'";
     ResultSet rs = stat.executeQuery(sql);
-    while (rs.next()) {
-        String d_account = rs.getString("account");//获取数据库的账号
-        String d_password = rs.getString("password");//获取数据库中的密码
+//    while (rs.next()) {
+//    String d_account = rs.getString("account");//获取数据库的账号
+    if (rs.next()) {
+
+        String d_password = rs.getString("password");//获取数据库中的密码}
         String d_type = rs.getString("type");//获取数据库中的用户类型
-        String d_id= rs.getString("ID");//获取数据库中的
+        String d_id = rs.getString("ID");//获取数据库中的
         String d_name = rs.getString("name");//获取数据库中的
         int d_count = rs.getInt("count");//获取数据库中的
-        if (d_account.equals(account) && d_password.equals(password)) {//判断表单和数据库中的账号密码是否相等
+//        if (d_account.equals(account) && d_password.equals(password)) {//判断表单和数据库中的账号密码是否相等
+        if (d_password.equals(password)) {//判断表单和数据库中的账号密码是否相等
 
             //储存用户数据
-            session.setAttribute("account", d_account);
-            session.setAttribute("password",d_password);
-            session.setAttribute("type",d_type);
-            session.setAttribute("id",d_id);
-            session.setAttribute("name",d_name);
-            session.setAttribute("count",d_count);
+            session.setAttribute("account", account);
+            session.setAttribute("password", d_password);
+            session.setAttribute("type", d_type);
+            session.setAttribute("id", d_id);
+            session.setAttribute("name", d_name);
+            session.setAttribute("count", d_count);
             //判断是否为管理员用户
             if (d_type.equals("nom")) {
                 response.sendRedirect("nomHome.jsp");
@@ -51,6 +54,7 @@
             }
         }
     }
+//    }
 %>
 <script type="text/javascript">//不相等则弹出警告并跳转回main.html
 window.alert("账号或者密码错误");

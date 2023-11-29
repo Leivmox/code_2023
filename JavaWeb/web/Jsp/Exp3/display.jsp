@@ -27,7 +27,7 @@
 
   Dao dao = new Dao();//创建Dao对象
   Connection con = dao.connection();//获得连接对象
-  String tableName = "t_vote";//数据库中的一个表的表名
+//  String tableName = "t_vote";//数据库中的一个表的表名
 
   Statement stat = con.createStatement();
 
