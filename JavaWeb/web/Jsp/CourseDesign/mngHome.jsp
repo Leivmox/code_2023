@@ -15,7 +15,7 @@
 <%
     //==========判断是否已经登录==========//
     String account = (String) session.getAttribute("account");
-    if (account == null) {
+    if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
     }

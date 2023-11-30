@@ -19,7 +19,7 @@
 <%
     //==========判断是否已经登录==========//
     String account = (String) session.getAttribute("account");
-    if (account == null) {
+    if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向到错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
     }
@@ -58,8 +58,8 @@
         <td><%=userName%></td>
         <td><%=userCount%></td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
-        <td><a href="nomEditProfile.jsp?nomID=<%=userID%>&nomName=<%=userName%>&nomPassword=<%=userPassword%>&nomAccount=<%=userAccount%>">修改资料</a></td>
-        <td>123</td>
+        <td><a href="editProfile.jsp?nomID=<%=userID%>&nomName=<%=userName%>&nomPassword=<%=userPassword%>&nomAccount=<%=userAccount%>">修改资料</a></td>
+        <td><a href="deleteUser.jsp?nomID=<%=userID%>">删除用户</a> </td>
         <td>123</td>
     </tr>
         <%

@@ -22,11 +22,17 @@
     String password = request.getParameter("password");
     String name = request.getParameter("name");
 
-    //判断是否已经登录
-    if (account == null) {
+
+
+    if (account == null) {//判断是否已经登录
         // 如果未登录，重定向到错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
-    } else {
+        return;
+    } else if (account.isEmpty()) {//判断是否是空值
+        //如果是是空值，跳转到提示页面
+        response.sendRedirect("jumpJsp/Error5.jsp");
+        return;
+    }else {
 
 
         //==========查询数据库中是否存在相同的account==========//

@@ -32,7 +32,7 @@
     String userName = request.getParameter("userName");
     String password = request.getParameter("password");
 
-    out.println(userName+"   "+password+"   "+nomID);
+    //判断 “修改资料表单” 传入的值是否为空
     if (userName != null && !userName.isEmpty() && password != null && !password.isEmpty()) {
         Dao dao = new Dao(); // 创建 Dao 对象
         Connection con = dao.connection(); // 获得连接对象
@@ -51,8 +51,8 @@
                 session.setAttribute("password", password);
             }
 
-//            response.sendRedirect("jumpJsp/success2.jsp");
-            response.sendRedirect((String) session.getAttribute("from"));
+            response.sendRedirect("jumpJsp/success2.jsp");
+//            response.sendRedirect((String) session.getAttribute("from"));
             return;
         }else {
             //更新失败
@@ -65,40 +65,5 @@
     window.alert("账号密码不能为空！");
     window.document.location.href = "<%=from%>"
 </script>
-
-
-
-
-<%--    String nomID = (String) session.getAttribute("nomID");--%>
-<%--    String userName = request.getParameter("userName");--%>
-<%--    String password = request.getParameter("password");--%>
-
-
-<%--    if (userName != null && password != null) {--%>
-
-<%--        Dao dao = new Dao();//创建Dao对象--%>
-<%--        Connection con = dao.connection();//获得连接对象--%>
-
-<%--        Statement stat = con.createStatement();--%>
-<%--        String sql = "UPDATE user SET name = '" + userName + "', password = '" + password + "' WHERE id = '" + nomID + "'"; // 假设user_id是用于识别特定用户的字段，userId是你要修改的用户的ID--%>
-
-<%--        stat.executeUpdate(sql);--%>
-
-<%--        session.setAttribute("name", userName);--%>
-<%--        session.setAttribute("password", password);--%>
-
-<%--    } else {--%>
-<%--%>--%>
-<%--<script type="text/javascript">--%>
-<%--    window.alert("账号密码不能为空！");--%>
-<%--    history.back(); // 返回上一个页面--%>
-<%--</script>--%>
-<%--<%--%>
-<%--    }--%>
-<%--%>--%>
-<%--<script type="text/javascript">--%>
-<%--    window.alert("修改成功！");--%>
-<%--    history.back(); // 返回上一个页面--%>
-<%--</script>--%>
 </body>
 </html>

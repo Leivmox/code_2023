@@ -38,7 +38,7 @@
     <div class="button-container">
         <a class="button" href="books.jsp">借阅图书</a>
         <a class="button" href="mybooks.jsp">我的图书</a>
-        <a class="button" href="nomEditProfile.jsp?nomID=<%=id%>&nomName=<%=name%>&nomPassword=<%=password%>&nomAccount=<%=account%>">修改资料</a>
+        <a class="button" href="editProfile.jsp?nomID=<%=id%>&nomName=<%=name%>&nomPassword=<%=password%>&nomAccount=<%=account%>">修改资料</a>
         <a class="button" href="main.html">退出登录</a>
     </div>
 </form>

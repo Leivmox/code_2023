@@ -16,6 +16,7 @@
 </head>
 <body>
 <%
+
     //==========判断是否已经登录==========//
     String account = (String) session.getAttribute("account");
     if (account == null) {
@@ -23,25 +24,27 @@
         response.sendRedirect("jumpJsp/Error1.jsp");
     }
 
+
     //将上一个页面的地址存入session中（用于判断是管理员还是普通用户，方便返回上一页面）
     session.setAttribute("from", request.getHeader("referer"));
 
-    //接受nomID、userName和password，由nomHome或 管理员管理页面 传入
+    //接收由 nomHome.jsp 或 manageUser.jsp 传入的 nomID、nomName、nomPassword、nomAccount
     String nomName = request.getParameter("nomName");
     String nomPassword = request.getParameter("nomPassword");
     String nomID = request.getParameter("nomID");
     String nomAccount = request.getParameter("nomAccount");
 
 %>
+    <%--将接收到的值 显示在表单上 并将更改后的值发送到editHandle.jsp--%>
 <form action="editHandle.jsp" method="post">
 账户:<%=nomAccount%><br>
+    <%--通过隐藏表单，将nomID的值传到editHandle.jsp--%>
     <input type="hidden" name="nomID" value="<%=nomID%>">
     名称:<input type="text" name="userName" value="<%=nomName%>"><br>
     密码:<input type="password" name="password" value="<%=nomPassword%>"><br>
-    <button onclick=window.location.href="<%=(String) session.getAttribute("from")%>">返回</button>
+    <button type="button" onclick=window.location.href="<%=(String) session.getAttribute("from")%>">返回</button>
     <input type="reset" value="恢复">
     <input type="submit" value="修改">
-
 </form>
 
 
