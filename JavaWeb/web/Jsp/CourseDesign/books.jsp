@@ -14,6 +14,7 @@
 <html>
 <head>
     <title>借阅</title>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 <%
@@ -63,12 +64,12 @@
 
     //==========实现显示“借阅状态”的功能==========//
     //声明一个status，初始化为“借阅状态”为“可借阅”
-    String status = "可借阅";
+    String status = "可借阅○";
     ResultSet rs2 =stat2.executeQuery(sql2);//执行查询语句sql2，将查询到的bookID放入rs2
     while (rs2.next()){
         String bookID = rs2.getString("BOOKID");//判断该userID是否已经借阅该图书
         if (bookID.equals(no)){//no为52行获取到的BookNum
-            status = "已借阅";//将“借阅状态”改为“已借阅”
+            status = "已借阅✓";//将“借阅状态”改为“已借阅”
         }
     }
 

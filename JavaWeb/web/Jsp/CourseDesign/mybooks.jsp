@@ -14,6 +14,7 @@
 <html>
 <head>
     <title>管理借阅</title>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 <%

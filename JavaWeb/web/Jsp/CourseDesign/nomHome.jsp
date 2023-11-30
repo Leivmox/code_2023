@@ -14,25 +14,33 @@
 <html>
 <head>
     <title>主页</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <%
-    //从session中获取用户 的account和name
+    //==========判断是否已经登录==========//
     String account = (String) session.getAttribute("account");
-    String name = (String) session.getAttribute("name");
-    //判断是否正常登录，即是否是按照正常流程来到这个页面，而不是直接打开此页面
     if (account == null) {
-        // 如果未登录，重定向回登录页面
-        response.sendRedirect("main.html");
+        // 如果未登录，重定向回错误页面
+        response.sendRedirect("jumpJsp/Error1.jsp");
     }
+
+
+    //从session中获取用户id、name、password
+    String id = (String) session.getAttribute("id");
+    String name = (String) session.getAttribute("name");
+    String password = (String) session.getAttribute("password");
 
 %>
 <body>
 <h1>欢迎登录图书管理系统</h1>
-当前用户：<%=name%> <br>
-<a href="books.jsp">借阅图书</a><br>
-<a href="mybooks.jsp">我的图书</a><br>
-<a href="nomEditProfile.jsp">修改资料</a><br>
-<a href="main.html">退出登录</a><br>
-
+<form class="button-form" action="#">
+    <p>当前用户：<%=name%></p>
+    <div class="button-container">
+        <a class="button" href="books.jsp">借阅图书</a>
+        <a class="button" href="mybooks.jsp">我的图书</a>
+        <a class="button" href="nomEditProfile.jsp?nomID=<%=id%>&nomName=<%=name%>&nomPassword=<%=password%>&nomAccount=<%=account%>">修改资料</a>
+        <a class="button" href="main.html">退出登录</a>
+    </div>
+</form>
 </body>
 </html>

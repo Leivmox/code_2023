@@ -1,7 +1,4 @@
-<%@ page import="conn.Dao" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: wujun
   Date: 2023/11/29
@@ -10,6 +7,9 @@
   还书的实现页面
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="conn.Dao" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.Statement" %>
 <html>
 <head>
     <title>Title</title>
