@@ -20,7 +20,7 @@
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
     }
 
@@ -42,10 +42,10 @@
     int ii = stat2.executeUpdate(sql2);
 
     //==========只有当所有操作成功，提交事务==========//
-    if (i > 0 && ii > 0) {
+    if (i > 0) {
         con.commit(); // 提交事务
         // 所有操作成功，提交事务
-        response.sendRedirect("jumpJsp/success3.jsp");
+        response.sendRedirect("../../../../jumpJsp/success3.jsp");
         return;
     }else {
         con.rollback(); // 回滚事务
@@ -55,7 +55,7 @@
 %>
 <script type="text/javascript">
     window.alert("删除失败！")
-    window.document.location.href = "manageUser.jsp";
+    window.document.location.href = "../manageUser.jsp";
 </script>
 </body>
 </html>

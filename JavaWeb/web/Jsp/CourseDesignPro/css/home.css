@@ -1,0 +1,44 @@
+/* home.css */
+
+/* ... */
+
+.button-form {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%; /* Adjust this width as needed */
+    margin: 0 auto;
+
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #007bff;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+a.button {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}

@@ -50,10 +50,10 @@
 
             //==========判断是否为管理员用户==========//
             if (d_type.equals("nom")) {//nom：normal
-                response.sendRedirect("nomHome.jsp");
+                response.sendRedirect("nom/nomHome.jsp");
             }
             if (d_type.equals("mng")) {//mng:manager
-                response.sendRedirect("mngHome.jsp");
+                response.sendRedirect("mng/mngHome.jsp");
             }
         }
     }

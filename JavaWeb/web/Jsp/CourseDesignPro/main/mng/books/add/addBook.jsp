@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Add Book</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../../../css/main.css">
 </head>
 <body>
 <%
@@ -18,7 +18,7 @@
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
     }
 %>
@@ -30,7 +30,7 @@
     价格:<input name="price" type="text"><BR>
     <input type="submit" value="新增">
     <input type="reset" value="清空">
-    <a class="custom-button" href="manageBooks.jsp">返回</a>
+    <a class="custom-button" href="../manageBooks.jsp">返回</a>
 </form>
 </body>
 </html>

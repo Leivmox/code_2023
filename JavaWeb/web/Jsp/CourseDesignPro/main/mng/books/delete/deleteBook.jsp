@@ -21,7 +21,7 @@
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
     }
 
@@ -73,22 +73,20 @@
             //========== 提交事务 ==========//
             con.commit(); // 提交事务
             con.setAutoCommit(true); // 恢复自动提交
-            response.sendRedirect("jumpJsp/success5.jsp"); // 重定向到成功页面
+            response.sendRedirect("../../../../jumpJsp/success5.jsp"); // 重定向到成功页面
 
         } catch (SQLException e) {//如果出现报错
             e.printStackTrace();
             con.rollback(); // 发生异常时回滚事务
             con.setAutoCommit(true); // 恢复自动提交
-            response.sendRedirect("jumpJsp/Error8.jsp"); // 重定向到错误页面
+            response.sendRedirect("../../../../jumpJsp/Error8.jsp"); // 重定向到错误页面
 
         } finally {//最后执行
             con.close(); // 关闭连接
         }
     } else {//若bookName为空
-        response.sendRedirect("jumpJsp/Error8.jsp"); // 如果bookID为空，重定向到错误页面
+        response.sendRedirect("../../../../jumpJsp/Error8.jsp"); // 如果bookID为空，重定向到错误页面
     }
 %>
-
-
 </body>
 </html>

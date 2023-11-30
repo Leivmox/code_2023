@@ -26,11 +26,11 @@
 
     if (account == null) {//判断是否已经登录
         // 如果未登录，重定向到错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
     } else if (account.isEmpty()) {//判断是否是空值
         //如果是是空值，跳转到提示页面
-        response.sendRedirect("jumpJsp/Error5.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error9.jsp");
         return;
     }else {
 
@@ -42,7 +42,7 @@
 
         //如果存在相同账户，则跳转警告页面并跳转回主页面
         if (rs.next()) {
-            response.sendRedirect("jumpJsp/Error2.jsp");
+            response.sendRedirect("../../../../jumpJsp/Error10.jsp");
         } else {
 
             //==========执行注册==========//
@@ -60,7 +60,7 @@
             int i = stat.executeUpdate(sql1);
 
             //跳转成功页面并跳转回main页面
-            response.sendRedirect("jumpJsp/success1.jsp");
+            response.sendRedirect("../../../../jumpJsp/success6.jsp");
         }
     }
 %>

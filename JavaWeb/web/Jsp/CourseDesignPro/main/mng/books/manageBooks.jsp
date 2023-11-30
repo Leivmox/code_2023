@@ -14,7 +14,7 @@
 <html>
 <head>
     <title>图书管理</title>
-    <link rel="stylesheet" href="css/styles5.css">
+    <link rel="stylesheet" href="../../../css/styles5.css">
 </head>
 <body>
 <%
@@ -22,7 +22,7 @@
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
 // 如果未登录，重定向回错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../jumpJsp/Error1.jsp");
         return;
     }
 
@@ -62,14 +62,14 @@
     <tr>
         <td><%=no%>
         </td>
-        <td><%=name%>
+        <td>《<%=name%>》
         </td>
         <td><%=author%>
         </td>
-        <td><%=price%>
+        <td><%=price%>￥
         </td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
-        <td><a href="deleteBook.jsp?no=<%=no%>">删除</a></td>
+        <td><a href="delete/deleteBook.jsp?no=<%=no%>">删除</a></td>
     </tr>
     <%
         }
@@ -79,8 +79,8 @@
 <%--    <a href="mngHome.jsp">返回</a>--%>
 <div class="button-container">
     <%--    <button class="custom-button" >按钮1</button>--%>
-    <a class="custom-button" href="mngHome.jsp">返回</a>
-    <a class="custom-button" href="addBook.jsp">新增</a>
+    <a class="custom-button" href="../mngHome.jsp">返回</a>
+    <a class="custom-button" href="add/addBook.jsp">新增</a>
 </div>
 </body>
 </html>

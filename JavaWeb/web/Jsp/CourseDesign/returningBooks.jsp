@@ -4,7 +4,7 @@
   Date: 2023/11/29
   Time: 22:32
   To change this template use File | Settings | File Templates.
-  还书的实现页面
+  还书的逻辑实现页面
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="conn.Dao" %>

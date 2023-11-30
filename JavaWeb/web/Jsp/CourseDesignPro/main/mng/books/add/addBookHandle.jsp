@@ -10,6 +10,7 @@
 <%@ page import="conn.Dao" %>
 <%@ page import="java.sql.Connection" %>
 <%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
 <html>
 <body>
 <%
@@ -17,7 +18,7 @@
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
-        response.sendRedirect("jumpJsp/Error1.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
     }
 
@@ -39,6 +40,20 @@
         Dao dao = new Dao();//创建Dao对象}
         Connection con = dao.connection();//获得连接对象
         Statement stat = con.createStatement();
+        Statement stat2 = con.createStatement();
+
+
+        //判断新建的图书id是否重复
+        String sql2 = "SELECT bookNum FROM books";
+        ResultSet rs = stat2.executeQuery(sql2);
+        while (rs.next()) {
+            String d_bookNum = rs.getString("bookNum");
+            if (bookID.equals(d_bookNum)) {
+                response.sendRedirect("../../../../jumpJsp/Error6.jsp");
+                return;
+            }
+        }
+
 
         //将传入的数据存入数据库
         String sql = "INSERT INTO books (bookNum, bookName, author, price) VALUES ('" + bookID + "', '" + bookName + "', '" + bookAuthor + "', '" + bookPrice + "')";
@@ -47,14 +62,14 @@
         //判断是否成功存入数据库
         if (i > 0) {
             //成功即跳转成功页面
-            response.sendRedirect("jumpJsp/success5.jsp");
+            response.sendRedirect("../../../../jumpJsp/success5.jsp");
         } else {
             //否则跳转错误页面
-            response.sendRedirect("jumpJsp/Error6.jsp");
+            response.sendRedirect("../../../../jumpJsp/Error6.jsp");
         }
     } else {
         //数据存在空值
-        response.sendRedirect("jumpJsp/Error7.jsp");
+        response.sendRedirect("../../../../jumpJsp/Error7.jsp");
     }
 %>
 </body>
