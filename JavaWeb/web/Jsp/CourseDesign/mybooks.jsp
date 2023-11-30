@@ -14,7 +14,7 @@
 <html>
 <head>
     <title>管理借阅</title>
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/styles5.css">
 </head>
 <body>
 <%
@@ -23,7 +23,10 @@
     if (account == null) {
         // 如果未登录，重定向到错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
+
+
     //获取用户ID
     String userID = (String) session.getAttribute("id");
 
@@ -41,7 +44,7 @@
         recordCount = rs2.getInt("record_count");
     }
 %>
-<table border="1" cellpadding="0">
+<table border="1" class="custom-table">
 <%--将record_count的值放入jsp表达式 ↓--%>
 <caption>已借阅图书:<%=recordCount%>本</caption>
 <tr>
@@ -70,6 +73,11 @@
 <%
     }
 %>
-    <a href="nomHome.jsp">返回</a>
+</table>
+<%--    <a href="nomHome.jsp">返回</a>--%>
+    <div class="button-container">
+        <%--    <button class="custom-button" >按钮1</button>--%>
+        <a class="custom-button" href="nomHome.jsp">返回</a>
+    </div>
 </body>
 </html>

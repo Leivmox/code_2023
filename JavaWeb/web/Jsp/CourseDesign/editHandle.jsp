@@ -22,6 +22,7 @@
     if (account == null) {
         // 如果未登录，重定向回错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
 
     //获取上一个页面的地址

@@ -14,7 +14,7 @@
 <html>
 <head>
     <title>借阅</title>
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/styles5.css">
 </head>
 <body>
 <%
@@ -23,10 +23,11 @@
     if (account == null) {
         // 如果未登录，重定向到错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
 %>
 <%--定义图书表格的开头--%>
-<table border="1">
+<table border="1" class="custom-table">
     <caption>图书管理系统</caption>
     <tr>
         <td>编号</td>
@@ -88,6 +89,12 @@
     }
 %>
 <%--//返回链接--%>
-    <a href="nomHome.jsp">返回</a>
+<%--    <a href="nomHome.jsp">返回</a>--%>
+</table>
+<div class="button-container">
+<%--    <button class="custom-button" >按钮1</button>--%>
+    <a class="custom-button" href="nomHome.jsp">返回</a>
+</div>
+</body>
 </body>
 </html>

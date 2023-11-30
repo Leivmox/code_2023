@@ -1,15 +1,15 @@
 <%--
   Created by IntelliJ IDEA.
   User: wujun
-  Date: 2023/11/28
-  Time: 10:40
+  Date: 2023/11/30
+  Time: 21:53
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <%
@@ -20,15 +20,17 @@
         response.sendRedirect("jumpJsp/Error1.jsp");
         return;
     }
-
 %>
-<h1>管理系统</h1>
-<form class="button-form" action="#">
-    <div class="button-container">
-        <a class="button" href="manageBooks.jsp">管理图书</a>
-        <a class="button" href="manageUser.jsp">管理用户</a>
-        <a class="button" href="main.html">退出登录</a>
-    </div>
+<h1>添加图书</h1>
+<form action="addBookHandle.jsp">
+    ID:<input name="id" type="text"><BR>
+    书名:<input name="name" type="text"><BR>
+    作者:<input name="author" type="password"><BR>
+    价格:<input name="price" type="text"><BR>
+
+    <input type="submit" value="新增">
+    <input type="reset" value="清空">
+    <a class="custom-button" href="manageBooks.jsp">返回</a>
 </form>
 </body>
 </html>

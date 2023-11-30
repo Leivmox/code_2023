@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: wujun
-  Date: 2023/11/29
-  Time: 19:49
+  Date: 2023/11/30
+  Time: 14:19
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,9 +11,9 @@
     <title>success</title>
 </head>
 <body>
-<script type = "text/javascript">
-        window.alert("成功");
-    window.document.location.href = "../main.html";
+<script type="text/javascript">
+    window.alert("成功！");
+    window.document.location.href = "../manageBooks.jsp"
 </script>
 </body>
 </html>

@@ -13,7 +13,7 @@
 <html>
 <head>
     <title>用户管理</title>
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/styles5.css">
 </head>
 <body>
 <%
@@ -22,10 +22,11 @@
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向到错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
 %>
 <%--定义用户表格的开头--%>
-<table border="1">
+<table border="1" class="custom-table">
     <caption>用户管理</caption>
     <tr>
         <td>ID</td>
@@ -65,9 +66,13 @@
         <%
     }
 %>
+</table>
     <%--//返回链接--%>
-    <a href="mngHome.jsp">返回</a>
-
+<%--    <a href="mngHome.jsp">返回</a>--%>
+    <div class="button-container">
+        <%--    <button class="custom-button" >按钮1</button>--%>
+        <a class="custom-button" href="mngHome.jsp">返回</a>
+    </div>
 
 </body>
 </html>

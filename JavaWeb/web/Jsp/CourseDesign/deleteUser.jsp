@@ -20,6 +20,7 @@
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
 
     //获取用户id
@@ -27,13 +28,28 @@
 
     Dao dao = new Dao();//创建Dao对象
     Connection con = dao.connection();//获得连接对象
-
+    con.setAutoCommit(false); // 关闭自动提交
     Statement stat = con.createStatement();
-    String sql ="DELETE FROM user WHERE id = '"+userID+"'";
+    Statement stat2 = con.createStatement();
 
+    //==========删除user表中，id 为userID 的记录==========//
+    String sql ="DELETE FROM user WHERE id = '"+userID+"'";
     int i =stat.executeUpdate(sql);
-    if (i >= 1) {
+
+    //==========删除borrow表中，userID为userID的记录==========//
+    String sql2 = "DELETE FROM borrow WHERE userID = '" + userID + "'";
+    int ii = stat2.executeUpdate(sql2);
+
+    //==========只有当所有操作成功，提交事务==========//
+    if (i > 0 && ii > 0) {
+        con.commit(); // 提交事务
+        // 所有操作成功，提交事务
         response.sendRedirect("jumpJsp/success3.jsp");
+        return;
+    }else {
+        con.rollback(); // 回滚事务
+        // 至少一条操作失败，回滚事务
+//        System.out.println("cw");
     }
 %>
 <script type="text/javascript">

@@ -11,7 +11,7 @@
 <html>
 
 <head>
-    <title>Title</title>
+    <title>Edit</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -22,6 +22,7 @@
     if (account == null) {
         // 如果未登录，重定向回错误页面
         response.sendRedirect("jumpJsp/Error1.jsp");
+        return;
     }
 
 
