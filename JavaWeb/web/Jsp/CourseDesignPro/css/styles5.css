@@ -49,3 +49,11 @@ h1 {
 .custom-button:hover {
     background-color: #0056b3;
 }
+
+.custom-table .custom-button {
+    padding: 5px 10px; /* 更改按钮的垂直内边距，以减小高度 */
+}
+.special-td {
+    width: auto; /* 设置宽度为最小值 */
+    text-align: center; /* 文字居中 */
+}

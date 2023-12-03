@@ -23,6 +23,7 @@ form {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*text-align: center;*/
 }
 
 input[type="text"],
@@ -50,4 +51,18 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover {
     background-color: #0056b3;
+}
+
+
+
+/*!* 这会让按钮内部的文本居中显示 *!*/
+/*.center-buttons input[type="submit"],*/
+/*.center-buttons input[type="reset"]{*/
+/*    !*width: 100%;*!*/
+
+/*    display: inline-block;*/
+/*    margin: 5px; !* 可以根据需要调整按钮之间的间距 *!*/
+/*}*/
+.center-buttons {
+    text-align: center;
 }

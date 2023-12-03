@@ -7,14 +7,15 @@
 </head>
 <body>
 <h1>注册账号</h1>
-<form action="registerValidation.jsp">
-    账号:<input name="account" type="text"><BR>
-    名称:<input name="name" type="text"><BR>
-    密码:<input name="password" type="password"><BR>
-
-    <input type="submit" value="注册">
-    <input type="reset" value="清空">
-    <button type="button" onclick=window.location.href="main.html">返回</button>
+<form action="registerValidation.jsp" >
+    账号:<input name="account" type="text" placeholder="请输入账号"><BR>
+    名称:<input name="name" type="text" placeholder="请输入用户名称"><BR>
+    密码:<input name="password" type="password" placeholder="请输入账密码"><BR>
+    <div class="center-buttons">
+    <input type="submit" value="注册"><BR>
+    <input type="reset" value="清空"><BR>
+    </div>
+    <a class="custom-button" href="../main.html">返回</a>
 </form>
 
 </body>

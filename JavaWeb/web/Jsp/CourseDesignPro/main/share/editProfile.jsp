@@ -31,18 +31,19 @@
 
     //接收由 nomHome.jsp 或 manageUser.jsp 传入的 nomID、nomName、nomPassword、nomAccount
     String nomName = request.getParameter("nomName");
-    String nomPassword = request.getParameter("nomPassword");
+//    String nomPassword = request.getParameter("nomPassword");
     String nomID = request.getParameter("nomID");
     String nomAccount = request.getParameter("nomAccount");
 
 %>
     <%--将接收到的值 显示在表单上 并将更改后的值发送到editHandle.jsp--%>
-<form action="editHandle.jsp" method="post">
-账户:<%=nomAccount%><br>
+<form action="editHandle.jsp">
+<%--账户:<%=nomAccount%><br>--%>
+    账户:<input type="text"  placeholder="<%=nomAccount%>" readonly><br>
     <%--通过隐藏表单，将nomID的值传到editHandle.jsp--%>
     <input type="hidden" name="nomID" value="<%=nomID%>">
-    名称:<input type="text" name="userName" value="<%=nomName%>"><br>
-    密码:<input type="password" name="password" value="<%=nomPassword%>"><br>
+    名称:<input type="text" name="userName" placeholder="<%=nomName%>"><br>
+    密码:<input type="password" name="password" placeholder="请输入新密码"><br>
     <button type="button" onclick=window.location.href="<%=(String) session.getAttribute("from")%>">返回</button>
     <input type="reset" value="恢复">
     <input type="submit" value="修改">

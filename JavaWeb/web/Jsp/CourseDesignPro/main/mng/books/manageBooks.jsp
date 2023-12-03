@@ -69,7 +69,9 @@
         <td><%=price%>￥
         </td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
-        <td><a href="delete/deleteBook.jsp?no=<%=no%>">删除</a></td>
+        <td class="special-td"> <a class="custom-button"
+                                   href="delete/deleteBook.jsp?no=<%=no%>">删除</a>
+        </td>
     </tr>
     <%
         }

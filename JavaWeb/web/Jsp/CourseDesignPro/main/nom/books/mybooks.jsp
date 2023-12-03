@@ -68,7 +68,9 @@
     <td><%=bookID%></td>
     <td>《<%=bookName%>》</td>
     <td><%=dateValue%></td>
-    <td><a href="returningBooks.jsp?bookID=<%=bookID%>">还书</a></td>
+    <td class="special-td"> <a class="custom-button"
+                               href="returnBooks.jsp?bookID=<%=bookID%>">还书</a>
+    </td>
 </tr>
 <%
     }

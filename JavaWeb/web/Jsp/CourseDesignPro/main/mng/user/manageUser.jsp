@@ -34,6 +34,7 @@
         <td>账号</td>
         <td>名称</td>
         <td>借阅数量</td>
+        <td class="special-td">&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
     </tr>
@@ -60,13 +61,19 @@
         </td>
         <td><%=userName%>
         </td>
-        <td><%=userCount%>本
-        </td>
+        <td><%=userCount%>本</td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
-        <td>
-            <a href="../../share/editProfile.jsp?nomID=<%=userID%>&nomName=<%=userName%>&nomPassword=<%=userPassword%>&nomAccount=<%=userAccount%>">修改资料</a>
+        <td class="special-td">
+            <a class="custom-button"
+               href="returnBooks/userBooks.jsp?userID=<%=userID%>&userName=<%=userName%>">管理借阅</a>
         </td>
-        <td><a href="delete/deleteUser.jsp?nomID=<%=userID%>">删除用户</a></td>
+        <td class="special-td"> <a class="custom-button"
+               href="../../share/editProfile.jsp?nomID=<%=userID%>&nomName=<%=userName%>&nomPassword=<%=userPassword%>&nomAccount=<%=userAccount%>">修改资料</a>
+        </td>
+        <td class="special-td"> <a class="custom-button"
+               href="delete/deleteUser.jsp?nomID=<%=userID%>">删除用户</a>
+        </td>
+
     </tr>
     <%
         }

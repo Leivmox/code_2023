@@ -83,7 +83,9 @@
         <td><%=price%>￥</td>
         <td><%=status%></td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
-        <td><a href="borrowHandle.jsp?no=<%=no%>&name=<%=name%>">借阅</a></td>
+        <td class="special-td"> <a class="custom-button"
+                                   href="borrowHandle.jsp?no=<%=no%>&name=<%=name%>">借阅</a>
+        </td>
     </tr>
         <%
     }

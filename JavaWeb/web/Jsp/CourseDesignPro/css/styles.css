@@ -48,3 +48,6 @@ button {
 button:hover {
     background-color: #bbb;
 }
+.center-buttons {
+    text-align: center;
+}
