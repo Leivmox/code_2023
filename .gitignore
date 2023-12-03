@@ -6,3 +6,4 @@ JavaWeb/target/
 *.class
 .idea
 .vscode
+.gitignore
