@@ -3,11 +3,12 @@ package conn;
 import java.sql.*;
 
 public class Dao {
-//    String serverIp = "localhost";//主机名，一般默认localhost
-    String serverIp = "175.178.24.223";//主机名，一般默认localhost
+    String serverIp = "localhost";//主机名，一般默认localhost
+//    String serverIp = "175.178.24.223";//主机名，一般默认localhost
     String databaseName = "myweb";//数据库的名字
     String userName = "root";
-    String pwd = "lambda_117MySQL";//数据库密码
+//    String pwd = "lambda_117MySQL";//数据库密码
+    String pwd = "123456";//数据库密码
     String jdbcUrl = "jdbc:mysql://" + serverIp + ":3306/" + databaseName + "?serverTimezone=Asia/Shanghai&useSSL=false&characterEncoding=UTF-8";
     Connection con = null;
 

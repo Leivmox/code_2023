@@ -1,5 +1,6 @@
 package beans;
 
+
 public class Student {
     private String stuno;
     private String stuname;
@@ -19,4 +20,6 @@ public class Student {
     public void setStuname(String stuname) {
         this.stuname = stuname;
     }
+
+
 }
