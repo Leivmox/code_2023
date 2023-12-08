@@ -18,7 +18,7 @@
 </head>
 <body>
 <%
-    //==========判断是否已经登录==========//
+    //==========判断是否已经登录且为管理员登录==========//
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
 // 如果未登录，重定向回错误页面
@@ -28,7 +28,7 @@
 
 %>
 
-<%--定义用户表格的开头--%>
+<%--定义图书表格的开头--%>
 <table border="1" class="custom-table">
     <caption>图书管理</caption>
     <tr>
@@ -47,10 +47,7 @@
 
         //定义sql语句：查询books表所有元素
         String sql = "SELECT * FROM books ORDER BY bookNum ASC";
-
-
         ResultSet rs = stat.executeQuery(sql);//执行sql语句，并将获取到值放入rs集合
-
 
 //==========通过循环，将rs集合中（数据库中）的值取出来并放到表格中==========//
         while (rs.next()) {
@@ -60,14 +57,10 @@
             String price = rs.getString("PRICE");//获取数据库中本次循环得到的图书价格
     %>
     <tr>
-        <td><%=no%>
-        </td>
-        <td>《<%=name%>》
-        </td>
-        <td><%=author%>
-        </td>
-        <td><%=price%>￥
-        </td>
+        <td><%=no%></td>
+        <td>《<%=name%>》</td>
+        <td><%=author%></td>
+        <td><%=price%>￥</td>
         <%--创建链接，点击链接跳转到horrowHandle.jsp页，并发送no和name的值--%>
         <td class="special-td"> <a class="custom-button"
                                    href="delete/deleteBook.jsp?no=<%=no%>">删除</a>

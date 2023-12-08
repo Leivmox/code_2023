@@ -39,7 +39,7 @@
     String countSql = "UPDATE user SET count=count-1 WHERE ID='" + userID + "'";
     int i = stat.executeUpdate(countSql);
 
-    //==========删除本borrow表中含有 本用户 和 对应bookID 的记录==========//
+    //==========将user表中本用户的count（借阅数）-1==========//
     Statement stat2 = con.createStatement();
     String deleteSql = "DELETE FROM borrow WHERE bookID = '" + bookID + "' AND userID = '" + userID + "'";
     int ii = stat2.executeUpdate(deleteSql);

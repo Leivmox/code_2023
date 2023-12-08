@@ -17,7 +17,7 @@
 
 
 <%
-    //==========判断是否已经登录==========//
+    //==========判断是否已经登录且为管理员登录==========//
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
@@ -28,8 +28,6 @@
 
     //获取表单传入的bookNum
     String bookNum = request.getParameter("no");
-
-
     //判断bookName是否为空
     if (bookNum != null && !bookNum.isEmpty()) {
 

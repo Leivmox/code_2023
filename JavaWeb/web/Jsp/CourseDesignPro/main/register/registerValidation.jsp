@@ -22,14 +22,8 @@
     String password = request.getParameter("password");
     String name = request.getParameter("name");
 
-
-
-    if (account == null) {//判断是否已经登录
-        // 如果未登录，重定向到错误页面
-        response.sendRedirect("../../jumpJsp/Error1.jsp");
-        return;
-    } else if (account.isEmpty()) {//判断是否是空值
-        //如果是是空值，跳转到提示页面
+    if (account == null || account.isEmpty()) {//判断传入值是否为空
+        // 传入值为空，重定向到错误页面
         response.sendRedirect("../../jumpJsp/Error5.jsp");
         return;
     }else {

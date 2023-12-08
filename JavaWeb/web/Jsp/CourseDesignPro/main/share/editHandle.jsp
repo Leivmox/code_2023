@@ -38,6 +38,7 @@
         Dao dao = new Dao(); // 创建 Dao 对象
         Connection con = dao.connection(); // 获得连接对象
 
+        //执行修改
         Statement stat = con.createStatement();
         String sql = "UPDATE user SET name = '" + userName + "', password = '" + password + "' WHERE id = '" + nomID + "'";
         int rowsAffected = stat.executeUpdate(sql);

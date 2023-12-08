@@ -16,7 +16,7 @@
 </head>
 <body>
 <%
-    //==========判断是否已经登录==========//
+    //==========判断是否已经登录且为管理员登录==========//
     String account = (String) session.getAttribute("account");
     if (account == null || !account.equals("Admin")) {
         // 如果未登录，重定向回错误页面
@@ -39,18 +39,15 @@
 
     //==========删除borrow表中，userID为userID的记录==========//
     String sql2 = "DELETE FROM borrow WHERE userID = '" + userID + "'";
-    int ii = stat2.executeUpdate(sql2);
+    stat2.executeUpdate(sql2);
 
-    //==========只有当所有操作成功，提交事务==========//
+    //==========提交事务==========//
     if (i > 0) {
         con.commit(); // 提交事务
-        // 所有操作成功，提交事务
         response.sendRedirect("../../../../jumpJsp/success3.jsp");
         return;
     }else {
-        con.rollback(); // 回滚事务
-        // 至少一条操作失败，回滚事务
-//        System.out.println("cw");
+        con.rollback(); // 操作失败,回滚事务
     }
 %>
 <script type="text/javascript">

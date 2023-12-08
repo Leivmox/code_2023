@@ -3,7 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
 <!--    <servlet>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <servlet-class>myServlet.Exp6.LoginServlet</servlet-class> &lt;!&ndash; Servlet 的完整类名 &ndash;&gt;-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <url-pattern>/LoginServlet</url-pattern> &lt;!&ndash; 这里是 Servlet 映射的路径 &ndash;&gt;-->
+<!--    </servlet-mapping>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>test1</servlet-name>-->
+<!--        <servlet-class>myServlet.test2</servlet-class> &lt;!&ndash; Servlet 的完整类名 &ndash;&gt;-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>test1</servlet-name>-->
+<!--        <url-pattern>/test1</url-pattern> &lt;!&ndash; 这里是 Servlet 映射的路径 &ndash;&gt;-->
+<!--    </servlet-mapping>-->
+    <!--    <servlet>-->
 <!--        <servlet-name>WelcomeServlet</servlet-name>-->
 <!--        <servlet-class>myServlet.WelcomeServlet</servlet-class>-->
 <!--    </servlet>-->

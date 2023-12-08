@@ -24,7 +24,7 @@
 
 
 
-    if (account == null) {//判断是否已经登录
+    if (account == null || !account.equals("Admin")) {//判断是否已经登录且为管理员登录
         // 如果未登录，重定向到错误页面
         response.sendRedirect("../../../../jumpJsp/Error1.jsp");
         return;
@@ -45,7 +45,7 @@
             response.sendRedirect("../../../../jumpJsp/Error10.jsp");
         } else {
 
-            //==========执行注册==========//
+            //==========执行新增==========//
             //获取数据库中用户最大ID
             String countQuery = "SELECT MAX(ID) AS maxID FROM user";
             ResultSet maxIDResult = stat.executeQuery(countQuery);
