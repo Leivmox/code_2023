@@ -1,4 +1,4 @@
-package myServlet.Exp6;
+package myServlet.Exp6.bookCart;
 
 import java.io.*;
 import javax.servlet.ServletException;
@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 import conn.Dao;
 
-@WebServlet(value = "/LoginServlet")
+@WebServlet(value = "/books")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -62,7 +62,7 @@ public class LoginServlet extends HttpServlet {
             out.println("</table>");
             out.println("</div>");
 
-            out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/main.html'>返回查询</a>");
+            out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/bookCart/main.html'>返回查询</a>");
 
         } catch (SQLException e) {
             e.printStackTrace();

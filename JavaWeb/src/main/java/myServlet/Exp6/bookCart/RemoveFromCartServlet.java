@@ -1,4 +1,4 @@
-package myServlet.Exp6;
+package myServlet.Exp6.bookCart;
 
 import java.io.*;
 import javax.servlet.ServletException;

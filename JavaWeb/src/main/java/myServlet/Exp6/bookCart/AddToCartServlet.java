@@ -1,4 +1,4 @@
-package myServlet.Exp6;
+package myServlet.Exp6.bookCart;
 
 import java.io.*;
 import javax.servlet.ServletException;
@@ -32,7 +32,7 @@ public class AddToCartServlet extends HttpServlet {
         session.setAttribute("cart", cart);
 
 
-        response.sendRedirect("/JavaWeb_Web_exploded/Jsp/Exp6/main.html");
+        response.sendRedirect("/JavaWeb_Web_exploded/Jsp/Exp6/bookCart/main.html");
 
 
     }

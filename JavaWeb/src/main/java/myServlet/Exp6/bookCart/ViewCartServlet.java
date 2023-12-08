@@ -1,4 +1,4 @@
-package myServlet.Exp6;
+package myServlet.Exp6.bookCart;
 
 import java.io.*;
 import javax.servlet.ServletException;
@@ -34,15 +34,15 @@ public class ViewCartServlet extends HttpServlet {
                     out.println("<a href='/JavaWeb_Web_exploded/RemoveFromCartServlet?item=" + i + "'>从购物车中删除</a>");
                     out.println("<hr>");
                 }
-                out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/main.html'>返回查询</a>");
+                out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/bookCart/main.html'>返回查询</a>");
             } else {
                 // 购物车为空时的提示信息
                 PrintWriter out = response.getWriter();
                 out.println("<h2>购物车为空</h2>");
-                out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/main.html'>返回查询</a>");
+                out.println("<a href='/JavaWeb_Web_exploded/Jsp/Exp6/bookCart/main.html'>返回查询</a>");
             }
         } else {
-            response.sendRedirect("/JavaWeb_Web_exploded/Jsp/Exp6/main.html");
+            response.sendRedirect("/JavaWeb_Web_exploded/Jsp/Exp6/bookCart/main.html");
         }
 
     }
