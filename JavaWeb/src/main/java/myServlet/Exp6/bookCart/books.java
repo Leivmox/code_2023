@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import conn.Dao;
 
 @WebServlet(value = "/books")
-public class LoginServlet extends HttpServlet {
+public class books extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");//解决post中文乱码

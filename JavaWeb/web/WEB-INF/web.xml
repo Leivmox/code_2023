@@ -6,7 +6,7 @@
 
 <!--    <servlet>-->
 <!--        <servlet-name>LoginServlet</servlet-name>-->
-<!--        <servlet-class>myServlet.Exp6.bookCart.LoginServlet</servlet-class> &lt;!&ndash; Servlet 的完整类名 &ndash;&gt;-->
+<!--        <servlet-class>myServlet.Exp6.bookCart.books</servlet-class> &lt;!&ndash; Servlet 的完整类名 &ndash;&gt;-->
 <!--    </servlet>-->
 <!--    <servlet-mapping>-->
 <!--        <servlet-name>LoginServlet</servlet-name>-->
