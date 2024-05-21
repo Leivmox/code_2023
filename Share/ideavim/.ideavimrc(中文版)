@@ -119,7 +119,7 @@ let mapleader = " "
 " 👻👻👻 Which-Key 👻👻👻
 " ================================================================================================
 
-"which-key的官方推荐配置 
+"which-key的官方推荐配置
 set which-key
 set notimeout
 
@@ -220,7 +220,7 @@ set notimeout
 " wh: MoveToLeft-跳转到左边的窗口(<c-w>h)
 " wk: MoveToUp-跳转到上边的窗口(<c-w>k)
 " wj: MoveToDown-跳转到下边的窗口(<c-w>j)
-" wwa: HideActiveWindow-关闭提示窗口(Shift+Esc)
+" ww: HideAllWindows-隐藏/显示活动窗口(Ctrl+Shift+F12)
 "===================================== X =====================================
 " x:
 "===================================== Y =====================================
@@ -325,7 +325,7 @@ nmap <leader>ga <action>(GenerateGetterAndSetter)
 let g:WhichKeyDesc_GitOrGenerate_GenerateEquals = "<leader>ge 生成equals和hashcode的重写"
 nmap <leader>ge <action>(GenerateEquals)
 "生成toString
-let g:WhichKeyDesc_GitOrGenerate_GenerateToString = "<leader>ge 生成toString"
+let g:WhichKeyDesc_GitOrGenerate_GenerateToString = "<leader>gt 生成toString"
 nmap <leader>gt <action>(Actions.ActionsPlugin.GenerateToString)
 "diff 显示文件的版本控制历史(git)
 nmap <leader>gd <action>(Vcs.ShowTabbedFileHistory)
@@ -366,13 +366,14 @@ nmap <leader>l <c-w>l
 "打开/关闭 代码小地图
 let g:WhichKeyDesc_CodeGlance = "<leader>m 开关小地图"
 nmap <leader>m <action>(CodeGlance.toggle)
+"好像更新版本后,突然用不了了,用默认的ctrl+shift+G吧
 
 
 "========== n ==========
 let g:WhichKeyDesc_NERDTreeOrNew = "<leader>n 目录树&新建"
 
 "取消搜索高亮显示(No Highlight)
-let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nh 取消搜索高亮"
+let g:WhichKeyDesc_NERDTreeOrNew_Highlight = "<leader>nl 取消搜索高亮"
 nmap <leader>nl :nohlsearch<CR>
 "在当前目录新建文件夹
 let g:WhichKeyDesc_NERDTreeOrNew_NewDir = "<leader>nd 新建文件夹"
@@ -443,7 +444,6 @@ vmap <leader>t <action>($EditorTranslateAction)
 
 "========== w ==========
 let g:WhichKeyDesc_Windows = "<leader>w 窗口"
-let g:WhichKeyDesc_Windows_Hide = "<leader>ww 关闭提示窗口->a"
 let g:WhichKeyDesc_Windows_Move = "<leader>wm 移动窗口"
 
 "向右拆分标签页
@@ -469,9 +469,9 @@ nmap <leader>wc <c-w>c
 let g:WhichKeyDesc_Windows_Unsplit = "<leader>wu 取消拆分当前分割窗口"
 nmap <leader>wu <action>(Unsplit)
 
-"关闭提示窗口
-let g:WhichKeyDesc_Windows_Hide_HideActiveWindow = "<leader>wwa 关闭提示窗口"
-nmap <leader>wwa <action>(HideActiveWindow)
+"隐藏/显示窗口
+let g:WhichKeyDesc_Windows_Hide_HideActiveWindow = "<leader>ww 隐藏/显示活动窗口"
+nmap <leader>ww <action>(HideAllWindows)
 
 
 "========== y ==========
@@ -527,6 +527,6 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 let g:WhichKeyDesc_easymotionkey = "<leader><leader> 快速跳转插件"
 
-
+"普通模式输入s后输入要跳转到单词首字母(或多输入几个字母)
 nmap s <Plug>(easymotion-bd-n)
 let g:WhichKeyDesc_easymotion = "s 快速跳转"
