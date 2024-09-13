@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #007bff;
+}
+
+.custom-table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.custom-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+.custom-table .custom-button {
+    padding: 5px 10px; /* 更改按钮的垂直内边距，以减小高度 */
+}
+.special-td {
+    width: auto; /* 设置宽度为最小值 */
+    text-align: center; /* 文字居中 */
+}
