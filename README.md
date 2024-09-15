@@ -12,8 +12,7 @@
 ### A little more about me...
 
 - 🌎 Find me around the web: [Leivzy's Blog](https://www.Leivzy.top)
-- 📫 Reach me asap: Leivzy@163.com
-- 🛢 &#160; Look at my article: [51CTO](https://blog.51cto.com/)
+- 📫 Reach me asap: Leivmox@163.com
 
 
 > ***I love to make friends. so if you want to say hi, I'll be happy to meet you more!😊***
